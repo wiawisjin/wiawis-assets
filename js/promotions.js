@@ -4,20 +4,20 @@
  * ============================================
  * 
  * [프로모션 페이지 사용법]
- * <div id="promo-page"></div>
- * <script src="promotions.js"></script>
+ * div#promo-page 삽입 후 이 스크립트 호출
  * → 히어로 + 카테고리 아코디언 + 전체 프로모션 렌더링
  * 
  * [모델 페이지 사용법]
- * <div id="promo-voucher-xp2"></div>
- * <div id="promo-installment"></div>
- * <script src="promotions.js"></script>
+ * div#promo-voucher-xp2, div#promo-installment 등 삽입 후 이 스크립트 호출
  * → 선택한 프로모션만 렌더링
  * 
  * [endDate 설정]
  * - "YYYY-MM-DD" 형식 (예: "2024-12-31")
  * - 해당 날짜 23:59:59 지나면 자동으로 안보임
  * - null = 상시 노출
+ * 
+ * [이미지]
+ * - 이미지 경로가 없거나 로드 실패 시 자동으로 placeholder 표시
  * 
  * ============================================
  */
@@ -39,7 +39,11 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/voucher-xp2.jpg" alt="바우처 프로모션">
+          <img src="/upload/프로모션/voucher-xp2.jpg" alt="바우처 프로모션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">바우처 증정 프로모션</span>
@@ -82,7 +86,11 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/voucher-pro2.jpg" alt="바우처 프로모션">
+          <img src="/upload/프로모션/voucher-pro2.jpg" alt="바우처 프로모션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">바우처 증정 프로모션</span>
@@ -125,7 +133,11 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/race.jpg" alt="대회 참가권">
+          <img src="/upload/프로모션/race.jpg" alt="대회 참가권" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">후원 대회 참가권 증정</span>
@@ -172,7 +184,11 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/installment.jpg" alt="무이자 할부">
+          <img src="/upload/프로모션/installment.jpg" alt="무이자 할부" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">6 / 12 / 24개월 무이자 할부</span>
@@ -214,7 +230,11 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/upgrade.jpg" alt="콕핏 업그레이드">
+          <img src="/upload/프로모션/upgrade.jpg" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">콕핏 & 싯포스트 업그레이드</span>
@@ -243,7 +263,11 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/falling.jpg" alt="Falling for Ride">
+          <img src="/upload/프로모션/falling.jpg" alt="Falling for Ride" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">Falling for Ride</span>
@@ -271,7 +295,11 @@ const WIAWIS_PROMOS = {
     html: `
       <a href="롯데카드링크주소" class="wiawis-promo-link" target="_blank">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/lotte.jpg" alt="롯데카드">
+          <img src="/upload/프로모션/lotte.jpg" alt="롯데카드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
         </div>
         <div class="wiawis-promo-content">
           <div>
@@ -458,8 +486,9 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-image {
   display: block;
-  background: #f0f0f0;
+  background: #0a0a0a;
   overflow: hidden;
+  position: relative;
 }
 
 .wiawis-promo-image img {
@@ -467,6 +496,44 @@ const WIAWIS_PROMO_STYLES = `
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Placeholder (테두리 프레임) */
+.wiawis-promo-placeholder {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  background: #0a0a0a;
+  position: relative;
+}
+
+.wiawis-promo-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  border: 1px solid #222;
+}
+
+.wiawis-promo-placeholder img {
+  height: 38px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+}
+
+.wiawis-promo-placeholder span {
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 4px;
+  font-family: 'Noto Sans KR', -apple-system, sans-serif;
 }
 
 .wiawis-promo-content {
@@ -600,6 +667,11 @@ const WIAWIS_PROMO_STYLES = `
   margin-left: 20px;
 }
 
+/* 링크형 placeholder */
+.wiawis-promo-link .wiawis-promo-placeholder {
+  min-height: 300px;
+}
+
 /* 반응형 */
 @media (max-width: 900px) {
   .wiawis-promo-item,
@@ -615,11 +687,19 @@ const WIAWIS_PROMO_STYLES = `
     min-height: 250px;
   }
 
+  .wiawis-promo-placeholder {
+    min-height: 250px;
+  }
+
   .wiawis-promo-content {
     padding: 32px 24px;
   }
 
   .wiawis-promo-link .wiawis-promo-image {
+    min-height: 200px;
+  }
+
+  .wiawis-promo-link .wiawis-promo-placeholder {
     min-height: 200px;
   }
 
@@ -647,6 +727,17 @@ const WIAWIS_PROMO_STYLES = `
 
   .wiawis-promo-image {
     min-height: 200px;
+  }
+
+  .wiawis-promo-placeholder {
+    min-height: 200px;
+  }
+
+  .wiawis-promo-placeholder::before {
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
   }
 
   .wiawis-promo-category summary {
