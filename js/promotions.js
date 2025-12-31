@@ -487,7 +487,13 @@ const WIAWIS_HERO = `
  * ============================================ */
 const WIAWIS_PROMO_STYLES = `
 <style>
-
+/* 개별 호출 시 좌우 번갈아 */
+.wiawis-promo-group > div:nth-child(even) .wiawis-promo-item {
+  direction: rtl;
+}
+.wiawis-promo-group > div:nth-child(even) .wiawis-promo-item > * {
+  direction: ltr;
+}
 
 /* 상위 CSS 리셋 */
 .wiawis-promo-wrap,
