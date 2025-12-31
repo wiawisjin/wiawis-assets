@@ -19,6 +19,15 @@
  * [이미지]
  * - 이미지 경로가 없거나 로드 실패 시 자동으로 placeholder 표시
  * 
+ * [링크]
+ * <!-- 페이지 내 이동을 위해서는 어드민에서 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 --!>
+ * <a href="https://wiawis.com/bikes/kr/2/1/category.do#WAWS_2" class="wiawis-promo-model-btn">WAWS 2</a>
+ * 
+ * 
+ * [문단]
+ * <ul calss="wiawis-promo-list"></ul>안에 감싸져있어야함
+ * 색상 지정을 위해서는 <span class="text-red"> 으로 감싸져있어야함
+ * 
  * ============================================
  */
 
@@ -34,12 +43,12 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-voucher-xp2"></div>
    * ========================================== */
   "voucher-xp2": {
-    endDate: "2024-12-31",  // 종료일
+    endDate: "2026-01-30",  // 종료일
     category: "radical",    // 카테고리 그룹
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/voucher-xp2.jpg" alt="바우처 프로모션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/2025102821756320aWj7aGlcv.png" alt="바우처 프로모션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
@@ -47,72 +56,27 @@ const WIAWIS_PROMOS = {
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">바우처 증정 프로모션</span>
-          <span class="wiawis-promo-desc">100만원 바우처로 내가 필요한 것만, 완벽한 프로 구성으로!</span>
-          <span class="wiawis-promo-period">기간: ~12월 31일까지</span>
+          <span class="wiawis-promo-desc">100만원 / 50만원 바우처로 내가 필요한 것만, 완벽한 프로 구성으로!</span>
+          <span class="wiawis-promo-period">기간: ~ 26년 1월 30일까지</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
           <ul class="wiawis-promo-list">
             <li>RADICAL-PRO XP 2 전 모델</li>
-          </ul>
-
-          <span class="wiawis-promo-section">구매 혜택</span>
-          <ul class="wiawis-promo-list">
-            <li>RADICAL-PRO XP 2 전 모델 : 100만원 바우처 제공</li>
-          </ul>
-
-          <div class="wiawis-promo-notice">
-            <span class="wiawis-promo-notice-title">유의 사항</span>
-            <ul class="wiawis-promo-list">
-              <li>사용은 구매한 대리점에서만 가능합니다.</li>
-              <li>사용기한은 구매일로부터 1개월입니다.</li>
-              <li>본 바우처는 용품 및 제품구매, 정비비용 등으로 사용 가능합니다.</li>
-              <li>타인에게 양도 및 재판매는 금지됩니다.</li>
-              <li>본 바우처는 부분 환불 등 현금으로 환불되지 않습니다.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `
-  },
-
-
-  /* ==========================================
-   * 바우처 50만원 (RADICAL-PRO 2)
-   * 사용: <div id="promo-voucher-pro2"></div>
-   * ========================================== */
-  "voucher-pro2": {
-    endDate: "2024-12-31",  // 종료일
-    category: "radical",
-    html: `
-      <div class="wiawis-promo-item">
-        <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/voucher-pro2.jpg" alt="바우처 프로모션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="wiawis-promo-placeholder">
-            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
-            <span>PROMOTION</span>
-          </div>
-        </div>
-        <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">바우처 증정 프로모션</span>
-          <span class="wiawis-promo-desc">50만원 바우처로 내가 필요한 것만, 완벽한 프로 구성으로!</span>
-          <span class="wiawis-promo-period">기간: ~12월 31일까지</span>
-
-          <span class="wiawis-promo-section">대상 모델</span>
-          <ul class="wiawis-promo-list">
             <li>RADICAL-PRO 2 전 모델</li>
           </ul>
 
           <span class="wiawis-promo-section">구매 혜택</span>
           <ul class="wiawis-promo-list">
+            <li>RADICAL-PRO XP 2 전 모델 : 100만원 바우처 제공</li>
             <li>RADICAL-PRO 2 전 모델 : 50만원 바우처 제공</li>
           </ul>
 
           <div class="wiawis-promo-notice">
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
-              <li>사용은 구매한 대리점에서만 가능합니다.</li>
+              <li><b>사용은 구매한 대리점에서만 가능합니다.</b></li>
               <li>사용기한은 구매일로부터 1개월입니다.</li>
-              <li>본 바우처는 용품 및 제품구매, 정비비용 등으로 사용 가능합니다.</li>
+              <li>본 바우처는 대리점에서 용품 및 제품구매, 정비비용 등으로 사용 가능합니다.</li>
               <li>타인에게 양도 및 재판매는 금지됩니다.</li>
               <li>본 바우처는 부분 환불 등 현금으로 환불되지 않습니다.</li>
             </ul>
@@ -121,6 +85,8 @@ const WIAWIS_PROMOS = {
       </div>
     `
   },
+
+
 
 
   /* ==========================================
@@ -128,12 +94,12 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-race"></div>
    * ========================================== */
   "race": {
-    endDate: "2024-12-31",  // 종료일
+    endDate: "2026-12-31",  // 종료일
     category: "radical",
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/race.jpg" alt="대회 참가권" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/202612365161548socb7neIY9.jpg" alt="대회 참가권" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
@@ -141,8 +107,8 @@ const WIAWIS_PROMOS = {
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">후원 대회 참가권 증정</span>
-          <span class="wiawis-promo-desc">위아위스와 함께하는 타이틀 대회 참가권을 증정합니다.</span>
-          <span class="wiawis-promo-period">기간: ~12월 31일까지</span>
+          <span class="wiawis-promo-desc">최대 42만원 혜택! 위아위스와 함께하는 타이틀 대회 참가권을 증정합니다.</span>
+          <span class="wiawis-promo-period">기간: ~1월 30일까지</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
           <ul class="wiawis-promo-list">
@@ -156,8 +122,8 @@ const WIAWIS_PROMOS = {
 
           <span class="wiawis-promo-section">대상 대회</span>
           <ul class="wiawis-promo-list">
-            <li>그란폰도: 고성공룡나라, 홍천, 정읍내장산, 문경새재, 섬섬여수</li>
-            <li>MTB 대회: 상주 MTB 대회</li>
+            <li>그란폰도 : 고성공룡나라, 홍천, 정읍내장산, 문경새재, 섬섬여수</li>
+            <li>MTB 대회 : 상주 MTB 대회</li>
           </ul>
 
           <div class="wiawis-promo-notice">
@@ -178,13 +144,13 @@ const WIAWIS_PROMOS = {
    * 무이자 할부 (전 모델)
    * 사용: <div id="promo-installment"></div>
    * ========================================== */
-  "installment": {
+  "card": {
     endDate: null,  // 상시 노출
     category: "all",
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/installment.jpg" alt="무이자 할부" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/2026123651639437fasRyYNAV.png" alt="무이자 할부" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
@@ -221,32 +187,146 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
-   * 콕핏 & 싯포스트 업그레이드 (전 모델)
-   * 사용: <div id="promo-upgrade"></div>
+   * ELNATH 콕핏 & 싯포스트 프로모션
+   * 사용: <div id="promo-elnath"></div>
    * ========================================== */
-  "upgrade": {
+  "elnath": {
     endDate: null,  // 상시 노출
-    category: "all",
+    category: "elnath",
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/upgrade.jpg" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/202612365140400Gk2yrgpxnA.jpg" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
           </div>
         </div>
         <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">콕핏 & 싯포스트 업그레이드</span>
-          <span class="wiawis-promo-desc">카르마토 콕핏과 싯포스트로 라이딩 퍼포먼스를 한 단계 높여보세요.</span>
-          <span class="wiawis-promo-period">상시 진행</span>
+          <span class="wiawis-promo-title">ELNATH 콕핏 & 싯포스트 프로모션</span>
+          <span class="wiawis-promo-desc">45만원의 카르마토 콕핏과 싯포스트로 라이딩 퍼포먼스를 한 단계 높여보세요.</span>
 
-          <span class="wiawis-promo-section">업그레이드 항목</span>
+          <span class="wiawis-promo-section">업그레이드 혜택</span>
           <ul class="wiawis-promo-list">
-            <li>카르마토 핸들바 업그레이드</li>
-            <li>카르마토 스템 업그레이드</li>
-            <li>카르마토 싯포스트 업그레이드</li>
+            <li>HB-MTB : 230,000원</li>
+            <li>ST-2 : 230,000원</li>
+            <li>SP-316 : 320,000원</li>
+          </ul><br>
+          
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>ELNATH 전 모델</b></li>
           </ul>
+        </div>
+      </div>
+    `
+  },
+  
+  /* ==========================================
+   * radical-m wheel upgrade 프로모션
+   * 사용: <div id="promo-xx1"></div>
+   * ========================================== */
+  "radicalmwheel": {
+    endDate: null,  // 상시 노출
+    category: "radical-m",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/detail/202508237175727cZZKNzaEls.png" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">WAWS 2 & RADICAL-M 카본 휠셋 업그레이드 프로모션</span>
+          <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 카르마토 카본 휠셋으로 완벽한 스타트!</span>
+
+          <span class="wiawis-promo-section">업그레이드 혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>휠셋 업그레이드 시 <span class="text-red"><b>50% 금액으로!</b></span></li>
+            <li>FULCRUM RACING 800 휠셋을 CARRMATO CXT-R50 ENT 혹은 CXT-R40 ENT로 업그레이드 시, 35만원에 업그레이드 적용</li>
+          </ul>
+          <span class="wiawis-promo-section">대상 모델</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <b><span class="text-red">FULCRUM RACING 800 휠셋을 사용하는 모델</span></b>
+          <BR>
+          <li><b>WAWS 2</b></li>
+          <li>RIVAL AXS E1</li>
+          <li>RIVAL AXS D1</li>
+          <li>105 Di2</li>
+          <BR>
+          <li><b>RADICAL-M</b></li>
+          <li>RIVAL AXS E1</li>
+          <li>RIVAL AXS D1</li>
+          <li>105 Di2</li>
+          </ul>
+          </div>
+          <span class="wiawis-promo-section">대상모델 바로가기</span>
+          <div>
+          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 --!>
+          <a href="https://wiawis.com/bikes/kr/2/1/category.do#WAWS_2" class="wiawis-promo-model-btn">WAWS 2</a>
+          <a href="https://wiawis.com/bikes/kr/3/11/category.do?dataId=230" class="wiawis-promo-model-btn">RADICAL-M</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  
+  
+    /* ==========================================
+   * XX1 프로모션
+   * 사용: <div id="promo-xx1"></div>
+   * ========================================== */
+  "xx1": {
+    endDate: null,  // 상시 노출
+    category: "xx1",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202510282174533tvcJSMRvQH.png" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">2026년 붉은 말 프로모션</span>
+          <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 최대 30% 할인으로 완벽한 시작!</span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <li><b>FORCE eTap AXS</b></li>
+          <li>WAWS-PRO 2 F</li>
+          <li>RADICAL-PRO F</li>
+          <li>RADICAL-M F</li>
+          <li>RADICAL-M F CARRMATO ENT CARBON</li>
+          <BR>
+          <li><b>RIVAL eTap AXS</b></li>
+          <li>WAWS 2 V</li>
+          <li>WAWS 2 V CARRMATO ENT</li>
+          <BR>
+          <li><b>XX1 AXS</b></li>
+          <li>HEXION-PRO R AXS</li>
+          <li>ELNATH-PRO R AXS</li>
+          <li>ELNATH R AXS</li>
+          <li>HEXION-G R AXS</li>
+          <BR>
+          <li><b>XX1</b></li>
+          <li>HEXION-PRO R</li>
+          <li>ELNATH-PRO R</li>
+          <li>ELNATH R</li>
+          </ul>
+          </div>
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_FORCE_D2" class="wiawis-promo-model-btn">FORCE eTap AXS</a>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_RIVAL_D1" class="wiawis-promo-model-btn">RIVAL eTap AXS</a>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#XX1_AXS" class="wiawis-promo-model-btn">FORCE eTap AXS</a>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#XX1" class="wiawis-promo-model-btn">RIVAL eTap AXS</a>
+          </div>
         </div>
       </div>
     `
@@ -258,27 +338,53 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-falling"></div>
    * ========================================== */
   "falling": {
-    endDate: "2025-03-31",  // 종료일
+    endDate: "2026-03-31",  // 종료일
     category: "campaign",
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/falling.jpg" alt="Falling for Ride" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="/upload/프로모션/upgrade.jpg" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
           </div>
         </div>
         <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">Falling for Ride</span>
-          <span class="wiawis-promo-desc">위아위스와 함께하는 특별한 라이딩 캠페인. (이름 변경 예정)</span>
-          <span class="wiawis-promo-period">진행 중</span>
+          <span class="wiawis-promo-title">2026년 붉은 말 프로모션</span>
+          <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 최대 30% 할인으로 완벽한 시작!</span>
 
-          <span class="wiawis-promo-section">캠페인 내용</span>
+          <span class="wiawis-promo-section">대상 모델</span>
+          <div>
           <ul class="wiawis-promo-list">
-            <li>캠페인 상세 내용이 여기에 들어갑니다.</li>
-            <li>필요한 만큼 내용을 추가하면 됩니다.</li>
+          <li><b>FORCE eTap AXS</b></li>
+          <li>WAWS-PRO 2 F</li>
+          <li>RADICAL-PRO F</li>
+          <li>RADICAL-M F</li>
+          <li>RADICAL-M F CARRMATO ENT CARBON</li>
+          <BR>
+          <li><b>RIVAL eTap AXS</b></li>
+          <li>WAWS 2 V</li>
+          <li>WAWS 2 V CARRMATO ENT</li>
+          <BR>
+          <li><b>XX1 AXS</b></li>
+          <li>HEXION-PRO R AXS</li>
+          <li>ELNATH-PRO R AXS</li>
+          <li>ELNATH R AXS</li>
+          <li>HEXION-G R AXS</li>
+          <BR>
+          <li><b>XX1</b></li>
+          <li>HEXION-PRO R</li>
+          <li>ELNATH-PRO R</li>
+          <li>ELNATH R</li>
           </ul>
+          </div>
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_FORCE_D2" class="wiawis-promo-model-btn">FORCE eTap AXS</a>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_RIVAL_D1" class="wiawis-promo-model-btn">RIVAL eTap AXS</a>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#XX1_AXS" class="wiawis-promo-model-btn">FORCE eTap AXS</a>
+          <a href="https://wiawis.com/bikes/kr/2/5/category.do#XX1" class="wiawis-promo-model-btn">RIVAL eTap AXS</a>
+          </div>
         </div>
       </div>
     `
@@ -290,25 +396,34 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-lotte"></div>
    * ========================================== */
   "lotte": {
-    endDate: "2025-01-31",  // 종료일
-    category: "campaign",
+    endDate: "2026-01-31",  // 종료일
+    category: "lotte",
     html: `
-      <a href="롯데카드링크주소" class="wiawis-promo-link" target="_blank">
+      <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="/upload/프로모션/lotte.jpg" alt="롯데카드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/202612365122029REeyhGBeN5.jpg" alt="무이자 할부" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
           </div>
         </div>
         <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">12 / 24개월 무이자 할부 & 10만원 캐시백</span>
+          <span class="wiawis-promo-desc">무이자 할부로 결제하고 10만원 캐시백 받아가자</span>
+          <span class="wiawis-promo-period">~ 3월 31일</span>
+          <br>
+          
+
+          <span class="wiawis-promo-section">상세 내용 보러가기</span>
           <div>
-            <span class="wiawis-promo-title">롯데카드 특별 혜택</span>
-            <span class="wiawis-promo-desc">롯데카드와 함께하는 특별 프로모션 (기간 한정)</span>
+          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 --!>
+          <ul class="wiawis-promo-list">
+          <li>아래의 링크를 눌러 자세한 내용을 확인하세요</li></ul>
+          <br><br>
+          <a href="https://wiawis.com/bikes/kr/view.do?idx=42" class="wiawis-promo-model-btn">상세내용 보기</a>
           </div>
-          <span class="wiawis-promo-arrow">→</span>
         </div>
-      </a>
+      </div>
     `
   }
 
@@ -318,29 +433,40 @@ const WIAWIS_PROMOS = {
 
 /* ============================================
  * 카테고리 그룹 정의
+ * 카테고리 채로 변경시 순서 변경됨
  * ============================================ */
 const WIAWIS_CATEGORIES = {
 
   /* ------ RADICAL 시리즈 ------ */
-  "radical": {
+  "radical-pro-xp": {
     title: "RADICAL-PRO XP2 / PRO2 프로모션",
     sub: "래디칼 프로 시리즈 구매 고객 대상",
-    promos: ["voucher-xp2", "voucher-pro2", "race"]  // 포함할 프로모션 ID
+    promos: ["voucher-xp2", "race"]  // 포함할 프로모션 ID
   },
 
+  /* ------ 엘나스 ------ */
+  "elnath": {
+    title: "ELNATH 콕핏 & 싯포스트 프로모션",
+    sub: "카본 핸들바, 스템, 싯포스트 무상 업그레이드!",
+    promos: ["elnath"]
+  },
+
+  /* ------ 전 모델 대상 ------ */
+  "xx1": {
+    title: "WELCOME 2026!",
+    sub: "2026년을 맞아 드리는 특별한 혜택",
+    promos: ["radicalmwheel", "xx1"]
+  },
+  
+  
   /* ------ 전 모델 대상 ------ */
   "all": {
     title: "전 모델 대상",
     sub: "위아위스 전 모델 구매 고객 대상",
-    promos: ["installment", "upgrade"]
+    promos: ["card", "lotte"]
   },
 
-  /* ------ 캠페인 & 제휴 ------ */
-  "campaign": {
-    title: "캠페인 & 제휴",
-    sub: "특별 캠페인 및 제휴 프로모션",
-    promos: ["falling", "lotte"]
-  }
+
 
 };
 
@@ -393,14 +519,14 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-hero h1 {
   display: block;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
   margin: 0 0 16px 0;
 }
 
 .wiawis-promo-hero p {
   display: block;
-  font-size: 16px;
+  font-size: 17px;
   color: #a3a3a3;
   max-width: 500px;
   margin: 0 auto;
@@ -423,7 +549,7 @@ const WIAWIS_PROMO_STYLES = `
   padding: 24px 40px;
   cursor: pointer;
   list-style: none;
-  background: #0a0a0a;
+  background: #222;
   color: #fff;
 }
 
@@ -433,13 +559,13 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-category-title {
   display: block;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .wiawis-promo-category-sub {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   color: #a3a3a3;
   margin-top: 4px;
 }
@@ -464,7 +590,6 @@ const WIAWIS_PROMO_STYLES = `
 .wiawis-promo-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 400px;
   border-bottom: 1px solid #e5e5e5;
   font-family: 'Noto Sans KR', -apple-system, sans-serif;
   line-height: 1.7;
@@ -492,10 +617,21 @@ const WIAWIS_PROMO_STYLES = `
 }
 
 .wiawis-promo-image img {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* placeholder 로고 이미지 (기존 유지) */
+.wiawis-promo-placeholder img {
+  position: static;
+  height: 38px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  object-fit: contain;
 }
 
 /* Placeholder (테두리 프레임) */
@@ -546,7 +682,7 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-title {
   display: block;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   color: #0a0a0a;
   margin-bottom: 10px;
@@ -554,14 +690,15 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-desc {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   color: #525252;
   margin-bottom: 20px;
 }
 
 .wiawis-promo-period {
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: bold;
   color: #fff;
   padding: 8px 14px;
   background: #0a0a0a;
@@ -571,7 +708,7 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-section {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #0a0a0a;
   margin-top: 20px;
@@ -579,6 +716,11 @@ const WIAWIS_PROMO_STYLES = `
   padding-bottom: 6px;
   border-bottom: 1px solid #e5e5e5;
 }
+
+.wiawis-promo-item .text-red {
+  color: #e53935;
+}
+
 
 .wiawis-promo-list {
   display: block;
@@ -589,7 +731,7 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-list li {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   color: #262626;
   padding: 5px 0 5px 14px;
   position: relative;
@@ -599,7 +741,7 @@ const WIAWIS_PROMO_STYLES = `
   content: '·';
   position: absolute;
   left: 0;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .wiawis-promo-notice {
@@ -611,7 +753,7 @@ const WIAWIS_PROMO_STYLES = `
 
 .wiawis-promo-notice-title {
   display: block;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   color: #999;
   margin-bottom: 8px;
@@ -620,9 +762,35 @@ const WIAWIS_PROMO_STYLES = `
 }
 
 .wiawis-promo-notice li {
-  font-size: 12px;
+  font-size: 13px;
   color: #737373;
   padding: 3px 0 3px 14px;
+}
+
+/* b, strong 태그 스타일 */
+.wiawis-promo-item b,
+.wiawis-promo-item strong {
+  font-weight: 700;
+}
+
+/* 모델 버튼 링크 */
+.wiawis-promo-model-btn {
+  display: inline-block;
+  font-size: 13px;
+  color: #0a0a0a;
+  padding: 8px 14px;
+  background: #fff;
+  border: 1px solid #0a0a0a;
+  text-decoration: none;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.wiawis-promo-model-btn:hover {
+  background: #0a0a0a;
+  color: #fff;
 }
 
 /* 링크형 */
@@ -714,11 +882,11 @@ const WIAWIS_PROMO_STYLES = `
   }
 
   .wiawis-promo-hero h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .wiawis-promo-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .wiawis-promo-content {
@@ -745,7 +913,7 @@ const WIAWIS_PROMO_STYLES = `
   }
 
   .wiawis-promo-category-title {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 </style>
@@ -754,16 +922,26 @@ const WIAWIS_PROMO_STYLES = `
 
 /* ============================================
  * 날짜 체크 함수
+ * startDate: 시작일 (없으면 바로 노출)
+ * endDate: 종료일 (없으면 상시 노출)
  * ============================================ */
-function isPromoActive(endDate) {
-  if (!endDate) return true;  // null이면 상시
-  
+function isPromoActive(startDate, endDate) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   
-  const end = new Date(endDate + "T23:59:59");
+  // 시작일 체크
+  if (startDate) {
+    const start = new Date(startDate + "T00:00:00");
+    if (today < start) return false;  // 아직 시작 안 함
+  }
   
-  return today <= end;
+  // 종료일 체크
+  if (endDate) {
+    const end = new Date(endDate + "T23:59:59");
+    if (today > end) return false;  // 이미 종료
+  }
+  
+  return true;
 }
 
 
@@ -784,7 +962,7 @@ function renderPromoPage() {
     // 해당 카테고리의 활성 프로모션 필터링
     const activePromos = cat.promos.filter(function(promoKey) {
       const promo = WIAWIS_PROMOS[promoKey];
-      return promo && isPromoActive(promo.endDate);
+      return promo && isPromoActive(promo.startDate, promo.endDate);
     });
 
     // 활성 프로모션이 있을 때만 카테고리 표시
@@ -825,7 +1003,7 @@ function renderIndividualPromos() {
     const el = document.getElementById("promo-" + key);
     if (el) {
       const promo = WIAWIS_PROMOS[key];
-      if (isPromoActive(promo.endDate)) {
+      if (isPromoActive(promo.startDate, promo.endDate)) {
         el.innerHTML = promo.html;
       } else {
         el.innerHTML = '';  // 기간 지나면 빈 값
