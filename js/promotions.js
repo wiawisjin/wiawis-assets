@@ -487,27 +487,7 @@ const WIAWIS_HERO = `
  * ============================================ */
 const WIAWIS_PROMO_STYLES = `
 <style>
-  /* ====== 상위 CSS 무력화 ====== */
-  .container {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
 
-  .fr-view {
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* 푸터 전체를 숨기는 코드 */
-  #footer-area {
-    display: none !important;
-  }
-
-  .container .mb-3 {
-    background-color: transparent !important;
-  }
 
 /* 상위 CSS 리셋 */
 .wiawis-promo-wrap,
