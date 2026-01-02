@@ -396,7 +396,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-lotte"></div>
    * ========================================== */
   "lotte": {
-    endDate: "2026-01-31",  // 종료일
+    endDate: "2025-01-31",  // 종료일
     category: "lotte",
     html: `
       <div class="wiawis-promo-item">
