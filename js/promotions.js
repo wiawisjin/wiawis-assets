@@ -56,7 +56,7 @@ const WIAWIS_PROMOS = {
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">바우처 증정 프로모션</span>
-          <span class="wiawis-promo-desc">100만원 / 50만원 바우처로 내가 필요한 것만, 완벽한 프로 구성으로!</span>
+          <span class="wiawis-promo-desc"><b>100만원 / 50만원 바우처</b>로 내가 필요한 것만, 완벽한 프로 구성으로!</span>
           <span class="wiawis-promo-period">기간: ~ 26년 1월 30일까지</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
@@ -204,10 +204,11 @@ const WIAWIS_PROMOS = {
         </div>
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">ELNATH 콕핏 & 싯포스트 프로모션</span>
-          <span class="wiawis-promo-desc">45만원의 카르마토 콕핏과 싯포스트로 라이딩 퍼포먼스를 한 단계 높여보세요.</span>
+          <span class="wiawis-promo-desc">78만원의 카르마토 콕핏과 싯포스트로 라이딩 퍼포먼스를 한 단계 높여보세요.</span>
 
           <span class="wiawis-promo-section">업그레이드 혜택</span>
           <ul class="wiawis-promo-list">
+          <li><b>RITCHEY COMP ALLOY -> 카르마토 카본 컴포넌트</b></li>
             <li>HB-MTB : 230,000원</li>
             <li>ST-2 : 230,000원</li>
             <li>SP-316 : 320,000원</li>
@@ -239,7 +240,7 @@ const WIAWIS_PROMOS = {
           </div>
         </div>
         <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">WAWS 2 & RADICAL-M 카본 휠셋 업그레이드 프로모션</span>
+          <span class="wiawis-promo-title">카본 휠셋 업그레이드 프로모션</span>
           <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 카르마토 카본 휠셋으로 완벽한 스타트!</span>
 
           <span class="wiawis-promo-section">업그레이드 혜택</span>
@@ -396,6 +397,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-lotte"></div>
    * ========================================== */
   "lotte": {
+    startDate: "2025-01-01", //시작일
     endDate: "2025-01-31",  // 종료일
     category: "lotte",
     html: `
