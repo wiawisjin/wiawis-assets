@@ -262,6 +262,7 @@ const WIAWIS_PROMOS = {
           <li>RIVAL AXS E1</li>
           <li>RIVAL AXS D1</li>
           <li>105 Di2</li>
+          <li>105</li>
           </ul>
           </div>
           <span class="wiawis-promo-section">대상모델 바로가기</span>
