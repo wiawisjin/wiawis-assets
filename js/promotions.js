@@ -399,7 +399,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "lotte": {
     startDate: "2025-01-01", //시작일
-    endDate: "2025-01-31",  // 종료일
+    endDate: "2026-03-31",  // 종료일
     category: "lotte",
     html: `
       <div class="wiawis-promo-item">
