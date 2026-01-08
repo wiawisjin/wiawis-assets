@@ -1,4 +1,6 @@
-/**
+/**캐시 삭제https://purge.jsdelivr.net/gh/wiawisjin/wiawis-assets/js/promotions.js
+
+
  * ============================================
  * WIAWIS 프로모션 관리 스크립트
  * ============================================
