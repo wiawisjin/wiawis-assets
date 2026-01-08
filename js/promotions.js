@@ -1,4 +1,4 @@
-/**캐시 삭제https://purge.jsdelivr.net/gh/wiawisjin/wiawis-assets/js/promotions.js
+/**캐시 삭제   https://purge.jsdelivr.net/gh/wiawisjin/wiawis-assets/js/promotions.js
 
 
  * ============================================
