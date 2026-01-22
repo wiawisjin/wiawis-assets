@@ -248,7 +248,7 @@ const WIAWIS_PROMOS = {
           <span class="wiawis-promo-section">업그레이드 혜택</span>
           <ul class="wiawis-promo-list">
             <li>휠셋 업그레이드 시 <span class="text-red"><b>50% 금액으로!</b></span></li>
-            <li>FULCRUM RACING 800 휠셋을 CARRMATO CXT-R50 ENT 혹은 CXT-R40 ENT로 업그레이드 시, 35만원에 업그레이드 적용</li>
+            <li>FULCRUM RACING 800 휠셋을 CARRMATO CXT-R50 ENT 혹은 CXT-R40 ENT로 업그레이드 시, <span class="text-red"><b>35만원에 업그레이드 적용</b></span></li>
           </ul>
           <span class="wiawis-promo-section">대상 모델</span>
           <div>
