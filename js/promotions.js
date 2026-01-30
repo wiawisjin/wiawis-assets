@@ -22,7 +22,7 @@
  * - 이미지 경로가 없거나 로드 실패 시 자동으로 placeholder 표시
  * 
  * [링크]
- * <!-- 페이지 내 이동을 위해서는 어드민에서 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 --!>
+ * <!-- 페이지 내 이동을 위해서는 어드민에서 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 -->
  * <a href="https://wiawis.com/bikes/kr/2/1/category.do#WAWS_2" class="wiawis-promo-model-btn">WAWS 2</a>
  * 
  * 
@@ -193,7 +193,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-elnath"></div>
    * ========================================== */
   "elnath": {
-    endDate: "2026-01-30",  // 종료일
+    endDate: "2026-01-31",  // 종료일
     category: "elnath",
     html: `
       <div class="wiawis-promo-item">
@@ -230,7 +230,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-xx1"></div>
    * ========================================== */
   "radicalmwheel": {
-    endDate: null,  // 상시 노출
+    endDate: "2026-01-31",  // 상시 노출
     category: "radical-m",
     html: `
       <div class="wiawis-promo-item">
@@ -269,7 +269,7 @@ const WIAWIS_PROMOS = {
           </div>
           <span class="wiawis-promo-section">대상모델 바로가기</span>
           <div>
-          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 --!>
+          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 -->
           <a href="https://wiawis.com/bikes/kr/2/1/category.do#WAWS_2" class="wiawis-promo-model-btn">WAWS 2</a>
           <a href="https://wiawis.com/bikes/kr/3/11/category.do?dataId=230" class="wiawis-promo-model-btn">RADICAL-M</a>
           </div>
@@ -278,6 +278,131 @@ const WIAWIS_PROMOS = {
     `
   },
   
+
+  /* ==========================================
+   * 로드 wheel upgrade 프로모션
+   * 사용: <div id="promo-roadwheel"></div>
+   * ========================================== */
+  "roadwheel": {
+    startDate: "2026-02-01",
+    endDate: "2026-02-28",  // 상시 노출
+    category: "wheel",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/20260130162455YNZUPBLUWV.png" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">ROAD WHEELSET UPGRADE<span class="text-red"><b> CHANCE</b></span></span>
+          <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 카르마토 카본 휠셋으로 완벽한 스타트!</span>
+          <span class="wiawis-promo-period">기간: ~2월 28일까지</span>
+
+          <span class="wiawis-promo-section">업그레이드 혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>휠셋 업그레이드 시 <span class="text-red"><b>50% 금액으로!</b></span></li>
+            <li>FULCRUM RACING 800 휠셋을 CARRMATO CXT-R50 ENT 혹은 CXT-R40 ENT로 업그레이드 시, <span class="text-red"><b>35만원에 업그레이드 적용</b></span></li>
+            
+          </ul>
+          <span class="wiawis-promo-section">대상 모델</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <b><span class="text-red">FULCRUM RACING 800 휠셋을 사용하는 모델</span></b>
+          <BR>
+          <li><b>WAWS 2</b></li>
+          <li>RIVAL AXS E1</li>
+          <li>RIVAL AXS D1</li>
+          <li>105 Di2</li>
+          <BR>
+          <li><b>RADICAL-M</b></li>
+          <li>RIVAL AXS E1</li>
+          <li>RIVAL AXS D1</li>
+          <li>105 Di2</li>
+          <li>105</li>
+          </ul>
+          </div>
+          <span class="wiawis-promo-section">대상모델 바로가기</span>
+          <div>
+          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 -->
+          <a href="https://wiawis.com/bikes/kr/2/1/category.do#WAWS_2" class="wiawis-promo-model-btn">WAWS 2</a>
+          <a href="https://wiawis.com/bikes/kr/3/11/category.do?dataId=230" class="wiawis-promo-model-btn">RADICAL-M</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
+
+
+  /* ==========================================
+   * MTB 휠셋 프로모션
+   * 사용: <div id="promo-elnath"></div>
+   * ========================================== */
+  "mtbwheel": {
+    startDate: "2026-02-01",
+    endDate: "2026-02-28",  // 종료일
+    category: "wheel",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/20260130155205BO7K9hy23M.jpg" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">MTB WHEELSET UPGRADE<span class="text-red"><b> CHANCE</b></span></span>
+          <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 휠셋 업그레이드로 완벽한 시즌 준비!</span>
+          <span class="wiawis-promo-period">기간: ~2월 28일까지</span>
+
+          <span class="wiawis-promo-section">업그레이드 혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>휠셋 업그레이드 시 <span class="text-red"><b>50% 금액으로!</b></span></li>
+            <li>DT SWISS X1900, XR1501 휠셋을 DT SWISS XRC 1501 CARBON 혹은 DT SWISS XR 1501로 업그레이드 시, <span class="text-red"><b>50% 금액으로 업그레이드 적용</b></span></li>
+          </ul>
+          <span class="wiawis-promo-section">대상 모델</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <b><span class="text-red">DT SWISS X1900 휠셋을 사용하는 모델</span></b>
+          <BR>
+          <li><b>ELNATH</b></li>
+          <BR>
+          <b><span class="text-red">DT SWISS XR 1501 휠셋을 사용하는 모델</span></b>
+          <BR>
+          <li><b>ELNATH-PRO</b></li>
+          <li><b>HEXION-PRO</b></li>
+          </ul>
+          </div>
+          <span class="wiawis-promo-section">업그레이드 비용</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <b><span class="text-red">DT SWISS X1900 -> XR 1501</span></b>
+          <BR>
+          <li><b>325,000원</b></li>
+          <BR>
+          <b><span class="text-red">DT SWISS X1900 -> XRC 1501</span></b>
+          <BR>
+          <li><b>700,000원</b></li>
+          <b><span class="text-red">DT SWISS XR1501 -> XRC 1501</span></b>
+          <BR>
+          <li><b>375,000원</b></li>
+          </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상모델 바로가기</span>
+          <div>
+          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 -->
+          <a href="https://wiawis.com/bikes/kr/3/178/category.do?dataId=180" class="wiawis-promo-model-btn">HEXION-PRO</a>
+          <a href="https://wiawis.com/bikes/kr/3/178/category.do?dataId=235" class="wiawis-promo-model-btn">ELNATH-PRO</a>
+          <a href="https://wiawis.com/bikes/kr/3/178/category.do?dataId=182" class="wiawis-promo-model-btn">ELNATH</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
   
     /* ==========================================
    * XX1 프로모션
@@ -421,7 +546,7 @@ const WIAWIS_PROMOS = {
 
           <span class="wiawis-promo-section">상세 내용 보러가기</span>
           <div>
-          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 --!>
+          <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 -->
           <ul class="wiawis-promo-list">
           <li>아래의 링크를 눌러 자세한 내용을 확인하세요</li></ul>
           <br><br>
@@ -455,12 +580,18 @@ const WIAWIS_CATEGORIES = {
     sub: "카본 핸들바, 스템, 싯포스트 무상 업그레이드!",
     promos: ["elnath"]
   },
+  /* ------ 202602wheeset ------ */
+  "wheel": {
+    title: "WHEELSET UPGRADE CHANCE",
+    sub: "휠셋 업그레이드 50% 찬스",
+    promos: ["roadwheel","mtbwheel"]
+  },
 
   /* ------ 전 모델 대상 ------ */
   "xx1": {
     title: "WELCOME 2026!",
     sub: "2026년을 맞아 드리는 특별한 혜택",
-    promos: ["radicalmwheel", "xx1"]
+    promos: ["xx1"]
   },
   
   
