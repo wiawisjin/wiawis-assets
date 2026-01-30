@@ -96,7 +96,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-race"></div>
    * ========================================== */
   "race": {
-    endDate: "2026-12-31",  // 종료일
+    endDate: "2026-01-30",  // 종료일
     category: "radical",
     html: `
       <div class="wiawis-promo-item">
@@ -193,7 +193,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-elnath"></div>
    * ========================================== */
   "elnath": {
-    endDate: null,  // 상시 노출
+    endDate: "2026-01-30",  // 종료일
     category: "elnath",
     html: `
       <div class="wiawis-promo-item">
