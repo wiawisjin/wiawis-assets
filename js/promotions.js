@@ -1157,7 +1157,7 @@ function renderIndividualPromos() {
       if (isPromoActive(promo.startDate, promo.endDate)) {
         el.innerHTML = promo.html;
       } else {
-        el.innerHTML = '';  // 기간 지나면 빈 값
+        el.remove();  // 기간 지나면 빈 값
       }
     }
   });
