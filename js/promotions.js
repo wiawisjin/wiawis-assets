@@ -625,10 +625,10 @@ const WIAWIS_PROMO_STYLES = `
 <style>
 /* 개별 호출 시 좌우 번갈아 */
 .wiawis-promo-group > div:nth-child(even) .wiawis-promo-item {
-  direction: rtl;
+  direction: rtl !important;
 }
 .wiawis-promo-group > div:nth-child(even) .wiawis-promo-item > * {
-  direction: ltr;
+  direction: ltr !important;
 }
 
 /* 상위 CSS 리셋 */
@@ -641,6 +641,13 @@ const WIAWIS_PROMO_STYLES = `
   all: unset;
   display: revert;
   box-sizing: border-box;
+}
+
+/* 취소선 스타일 복원 */
+.wiawis-promo-item strike,
+.wiawis-promo-item s,
+.wiawis-promo-item del {
+  text-decoration: line-through;
 }
 
 .wiawis-promo-wrap {
