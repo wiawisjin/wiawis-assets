@@ -381,14 +381,14 @@ const WIAWIS_PROMOS = {
           <ul class="wiawis-promo-list">
           <b><span class="text-red">DT SWISS X1900 -> XR 1501</span></b>
           <BR>
-          <li><b>325,000원</b></li>
+          <li><strike>650,000원</strike> -> <b>325,000원</b></li>
           <BR>
           <b><span class="text-red">DT SWISS X1900 -> XRC 1501</span></b>
           <BR>
-          <li><b>700,000원</b></li>
+          <li><strike>1,400,000원</strike> -> <b>700,000원</b></li>
           <b><span class="text-red">DT SWISS XR1501 -> XRC 1501</span></b>
           <BR>
-          <li><b>375,000원</b></li>
+          <li><strike>750,000원</strike> -> <b>375,000원</b></li>
           </ul>
           </div>
 
@@ -584,7 +584,7 @@ const WIAWIS_CATEGORIES = {
   "wheel": {
     title: "WHEELSET UPGRADE CHANCE",
     sub: "휠셋 업그레이드 50% 찬스",
-    promos: ["roadwheel","mtbwheel"]
+    promos: ["mtbwheel","roadwheel"]
   },
 
   /* ------ 전 모델 대상 ------ */
