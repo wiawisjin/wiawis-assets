@@ -342,7 +342,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "mtbwheel": {
     startDate: "2026-02-01",
-    endDate: "2026-02-28",  // 종료일
+    endDate: "2026-03-30",  // 종료일
     category: "wheel",
     html: `
       <div class="wiawis-promo-item">
