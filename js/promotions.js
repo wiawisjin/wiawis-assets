@@ -285,7 +285,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "roadwheel": {
     startDate: "2026-02-01",
-    endDate: "2026-02-28",  // 상시 노출
+    endDate: "2026-03-30",  // 상시 노출
     category: "wheel",
     html: `
       <div class="wiawis-promo-item">
@@ -299,7 +299,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">ROAD WHEELSET UPGRADE<span class="text-red"><b> CHANCE</b></span></span>
           <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 카르마토 카본 휠셋으로 완벽한 스타트!</span>
-          <span class="wiawis-promo-period">기간: ~2월 28일까지</span>
+          <span class="wiawis-promo-period">기간: ~3월 30일까지</span>
 
           <span class="wiawis-promo-section">업그레이드 혜택</span>
           <ul class="wiawis-promo-list">
