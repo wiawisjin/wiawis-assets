@@ -356,7 +356,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">MTB WHEELSET UPGRADE<span class="text-red"><b> CHANCE</b></span></span>
           <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 휠셋 업그레이드로 완벽한 시즌 준비!</span>
-          <span class="wiawis-promo-period">기간: ~2월 28일까지</span>
+          <span class="wiawis-promo-period">기간: ~3월 30일까지</span>
 
           <span class="wiawis-promo-section">업그레이드 혜택</span>
           <ul class="wiawis-promo-list">
