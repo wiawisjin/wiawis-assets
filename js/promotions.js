@@ -549,6 +549,8 @@ const WIAWIS_PROMOS = {
           <!-- 페이지 내 이동을 위해서는 <p id="제품명"></p>본제품명 이 카테고리 안에 들어가야 정상 작동함 -->
           <ul class="wiawis-promo-list">
           <li>아래의 링크를 눌러 자세한 내용을 확인하세요</li></ul>
+          <li>* 대상 내용을 확인바랍니다.(신규 혹은 6개월 이상 롯데카드 이력이 없을 경우만 해당)</li></ul>
+          <li>* 대상 카드를 반드시 발급 받아야합니다.</li></ul>
           <br><br>
           <a href="https://wiawis.com/bikes/kr/view.do?idx=42" class="wiawis-promo-model-btn">상세내용 보기</a>
           </div>
