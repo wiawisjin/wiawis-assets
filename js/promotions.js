@@ -461,6 +461,44 @@ const WIAWIS_PROMOS = {
     `
   },
 
+     /* ==========================================
+   * 26 sprring sale
+   * 사용: <div id="promo-26spring"></div>
+   * ========================================== */
+  "26spring": {
+    endDate: null,  // 상시 노출
+    category: "26spring",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/20260390141750xALcLxIO6K.png" alt="스프링 세일" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">WIAWIS APPAREL SPRING SALE</span>
+          <span class="wiawis-promo-desc">봄바람 살살 불기 시작한 지금! 새 라이딩 기어와 함께 시즌 시작!</span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <li>WIND JACKET 2</li>
+          <li>GLOVE LONG FINGER</li>
+          <li>GLOVE HALF FINGER</li>
+          </ul>
+          </div>
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+          <a href="https://wiawis.com/bikes/kr/1/3/category.do?dataId=103" class="wiawis-promo-model-btn">대상모델 보기</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  
+  
 
   /* ==========================================
    * Falling for Ride 캠페인
@@ -526,7 +564,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "lotte": {
     startDate: "2025-01-01", //시작일
-    endDate: "2026-03-31",  // 종료일
+    endDate: "2026-06-30",  // 종료일
     category: "lotte",
     html: `
       <div class="wiawis-promo-item">
@@ -540,7 +578,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">12 / 24개월 무이자 할부 & 10만원 캐시백</span>
           <span class="wiawis-promo-desc">무이자 할부로 결제하고 10만원 캐시백 받아가자</span>
-          <span class="wiawis-promo-period">~ 3월 31일</span>
+          <span class="wiawis-promo-period">~ 6월 30일</span>
           <br>
           
 
@@ -588,7 +626,12 @@ const WIAWIS_CATEGORIES = {
     sub: "휠셋 업그레이드 50% 찬스",
     promos: ["mtbwheel","roadwheel"]
   },
-
+  /* ------ 전 모델 대상 ------ */
+  "26spring": {
+    title: "APPAREL SPRING SALE",
+    sub: "2026년을 봄맞이 특별 혜택",
+    promos: ["26spring"]
+  },
   /* ------ 전 모델 대상 ------ */
   "xx1": {
     title: "WELCOME 2026!",
