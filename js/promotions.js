@@ -460,7 +460,51 @@ const WIAWIS_PROMOS = {
       </div>
     `
   },
-
+     /* ==========================================
+   * 26 sprring sale2
+   * 사용: <div id="promo-26spring2"></div>
+   * ========================================== */
+  "26spring2": {
+    startDate: "2026-04-06",
+    endDate: "2026-05-30",  // 종료일
+    category: "26spring",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/20260493113409jM9TsLivyl.png" alt="스프링 세일" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">SPRING COCOPIT UPGRADE</span>
+          <span class="wiawis-promo-desc">2026 첫 라이딩, 첫카본 콕핏, 시즌 스타트 패키지로!</span>
+          <span class="wiawis-promo-period">기간: ~5월 30일까지</span>
+          <span class="wiawis-promo-section">대상 모델</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <li>WAWS 2</li>
+          <li>RADICA-M(기계식 105 제외)</li>
+          </ul>
+          
+          <span class="wiawis-promo-section">혜택</span>
+          <div>
+          <ul class="wiawis-promo-list">
+          <li>RITCHEY COMP ALLOY, FSA SMR2 ALLOY -> <b>HB-WAWS AI ENT</b></li>
+          <li>RITCHEY COMP ALLOY, FSA SMR2 ALLOY -> <b>HB-RADICAL AI ENT</b></li>
+          </ul>
+          </div>
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+          <a href="https://wiawis.com/bikes/kr/3/10/category.do?dataId=227" class="wiawis-promo-model-btn">WAWS 2</a>
+          <a href="https://wiawis.com/bikes/kr/3/11/category.do" class="wiawis-promo-model-btn">RADICAL-M</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
+  
      /* ==========================================
    * 26 sprring sale
    * 사용: <div id="promo-26spring"></div>
@@ -628,9 +672,9 @@ const WIAWIS_CATEGORIES = {
   },
   /* ------ 전 모델 대상 ------ */
   "26spring": {
-    title: "APPAREL SPRING SALE",
+    title: "SPRING SALE",
     sub: "2026년을 봄맞이 특별 혜택",
-    promos: ["26spring"]
+    promos: ["26spring2","26spring"]
   },
   /* ------ 전 모델 대상 ------ */
   "xx1": {
