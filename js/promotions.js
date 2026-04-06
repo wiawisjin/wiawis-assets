@@ -471,7 +471,7 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="https://wiawis.com/upload/editor/20260496113529kq26DzhtRh.png" alt="스프링 세일" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/20260496123240R4GbMevKFp.png" alt="스프링 세일" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
@@ -487,7 +487,7 @@ const WIAWIS_PROMOS = {
           <li>WAWS 2</li>
           <li>RADICA-M(기계식 105 제외)</li>
           </ul>
-          
+          </div>
           <span class="wiawis-promo-section">혜택</span>
           <div>
           <ul class="wiawis-promo-list">
