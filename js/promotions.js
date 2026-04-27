@@ -478,7 +478,7 @@ const WIAWIS_PROMOS = {
           </div>
         </div>
         <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">SPRING COCOPIT UPGRADE</span>
+          <span class="wiawis-promo-title">SPRING COCKPIT UPGRADE</span>
           <span class="wiawis-promo-desc">2026 첫 라이딩, 첫카본 콕핏, 시즌 스타트 패키지로!</span>
           <span class="wiawis-promo-period">기간: ~5월 30일까지</span>
           <span class="wiawis-promo-section">대상 모델</span>
@@ -504,6 +504,62 @@ const WIAWIS_PROMOS = {
       </div>
     `
   },
+  
+   "tuscia": {
+  startDate: "2026-04-06",
+  endDate: "2026-05-31",
+  category: "tuscia",
+  html: `
+    <div class="wiawis-promo-item">
+      <div class="wiawis-promo-image">
+        <img src="https://wiawis.com/upload/editor/2026041172013333mO8Doa4ix.png" alt="TUSCIA EARLY ACCESS" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="wiawis-promo-placeholder">
+          <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+          <span>PROMOTION</span>
+        </div>
+      </div>
+      <div class="wiawis-promo-content">
+        <span class="wiawis-promo-title">TUSCIA EARLY ACCESS</span>
+        <span class="wiawis-promo-desc">먼저 시작하는 사람에게 드리는 위아위스만의 혜택</span>
+        <span class="wiawis-promo-period">기간: ~5월 31일까지</span>
+
+        <span class="wiawis-promo-section">대상 모델</span>
+        <ul class="wiawis-promo-list">
+          <li><b>TUSCIA RIVAL XPLR</b></li>
+          <li>DT SWISS G1800 ALLOY : 4,500,000원</li>
+          <li>CARRMATO G30 ENT CARBON : 5,200,000원</li>
+        </ul>
+
+        <span class="wiawis-promo-section">사전 구매 혜택</span>
+        <ul class="wiawis-promo-list">
+          <li>사전 구매자 전원 <b>TOURING BACKPACK 4</b> 증정</li>
+          <li>정가 89,000원 상당의 투어링 백팩과 함께 멀리 떠나보세요!</li>
+        </ul>
+
+        <span class="wiawis-promo-section">TUSCIA 특징</span>
+        <ul class="wiawis-promo-list">
+          <li>SRAM RIVAL XPLR 구동계 장착</li>
+          <li>위아위스 WINACT-G1 그래핀 나노카본 프레임</li>
+          <li>다양한 노면에 대응하는 레이싱을 아우르는 어드벤처 그래블</li>
+        </ul>
+
+        <div class="wiawis-promo-notice">
+          <span class="wiawis-promo-notice-title">유의 사항</span>
+          <ul class="wiawis-promo-list">
+            <li>사전 구매 기간 내 계약금 입금 시 적용됩니다.</li>
+            <li>백팩은 자전거 출고 시 함께 제공됩니다.</li>
+            <li>수량 한정으로 조기 종료될 수 있습니다.</li>
+          </ul>
+        </div>
+
+        <span class="wiawis-promo-section">대상 모델 보러가기</span>
+        <div>
+          <a href="https://wiawis.com/bikes/kr/3/232/664/view.do" class="wiawis-promo-model-btn">TUSCIA</a>
+        </div>
+      </div>
+    </div>
+  `
+},
   
      /* ==========================================
    * 26 sprring sale
@@ -650,7 +706,12 @@ const WIAWIS_PROMOS = {
  * 카테고리 채로 변경시 순서 변경됨
  * ============================================ */
 const WIAWIS_CATEGORIES = {
-
+/* ------ 투시아 시리즈 ------ */
+  "tuscia": {
+  title: "TUSCIA EARLY ACCESS",
+  sub: "그래블 사전 구매 혜택! 어디서든 달릴 수 있는 투시아와 함께 멀리 떠나세요!",
+  promos: ["tuscia"]
+},
   /* ------ RADICAL 시리즈 ------ */
   "radical-pro-xp": {
     title: "RADICAL-PRO XP2 / PRO2 프로모션",
