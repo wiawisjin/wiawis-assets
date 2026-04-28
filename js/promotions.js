@@ -533,7 +533,7 @@ const WIAWIS_PROMOS = {
         <span class="wiawis-promo-section">사전 구매 혜택</span>
         <ul class="wiawis-promo-list">
           <li>사전 구매자 전원 <b>TOURING BACKPACK 4</b> 증정</li>
-          <li>정가 89,000원 상당의 투어링 백팩과 함께 멀리 떠나보세요!</li>
+          <li>정가 78,000원 상당의 투어링 백팩과 함께 멀리 떠나보세요!</li>
         </ul>
 
         <span class="wiawis-promo-section">TUSCIA 특징</span>
