@@ -566,7 +566,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-26spring"></div>
    * ========================================== */
   "26spring": {
-    endDate: null,  // 상시 노출
+    endDate: "2026-05-31",,  // 상시 노출
     category: "26spring",
     html: `
       <div class="wiawis-promo-item">
