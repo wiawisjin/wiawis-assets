@@ -41,11 +41,84 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
+   * PERFORMANCE CHALLENGE
+   * 사용: <div id="promo-challenge"></div>
+   * ========================================== */
+  "challenge": {
+    startDate: "2026-06-01",
+    endDate: "2026-08-30",
+    category: "challenge",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202606152192305hKhup34cQY.png" alt="PERFORMANCE CHALLENGE" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">PERFORMANCE CHALLENGE</span>
+          <span class="wiawis-promo-desc">위아위스로 PR 갱신 인증하고, 선물 받아가자!</span>
+          <span class="wiawis-promo-period">기간: 6월 1일 ~ 8월 30일 (2개월간)</span>
+
+          <span class="wiawis-promo-section">참여 대상</span>
+          <ul class="wiawis-promo-list">
+            <li>현행 WIAWIS 제품 보유자</li>
+            <li>타 브랜드 경험자 한정</li>
+            <li>위아위스 내 업그레이드도 OK</li>
+            <li>시승차도 참여 OK</li>
+          </ul>
+
+          <span class="wiawis-promo-section">챌린지 조건</span>
+          <ul class="wiawis-promo-list">
+            <li>스트라바(STRAVA)에서 본인의 PR(개인 기록)을 갱신하세요</li>
+            <li>구간 무관, 본인 기록 갱신이면 OK</li>
+          </ul>
+
+          <span class="wiawis-promo-section">참여 절차</span>
+          <ul class="wiawis-promo-list">
+            <li><b>STEP 1.</b> 스트라바에서 PR 갱신</li>
+            <li><b>STEP 2.</b> PR 인증 스크린샷이 포함된 온라인 후기 작성</li>
+            <li><b>STEP 3.</b> 이벤트 페이지에서 후기 URL 접수</li>
+            <li><b>STEP 4.</b> 이벤트 종료 후 경품 발송</li>
+          </ul>
+
+          <span class="wiawis-promo-section">챌린지 경품</span>
+          <ul class="wiawis-promo-list">
+            <li><b class="text-red">최우수 후기 (1명)</b> : CARRMATO CXT-R50 WAVY 휠셋</li>
+            <li><b>우수 후기 (10명)</b> : WIAWIS 셋트 (투어링백팩·팔토시·양말·물통)</li>
+            <li><b>PR 인증 전원</b> : WIAWIS 450CC 물통</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>후기에는 스트라바 PR 갱신 내역 스크린샷이 반드시 포함되어야 합니다.</li>
+              <li>자전거 기변 후 새롭게 갱신한 PR 기록만 인정됩니다.</li>
+              <li>작성해주신 후기는 검토 후 승인된 건에 한해 이벤트 페이지에 게시됩니다.</li>
+              <li>우수 후기 선정 결과는 이벤트 종료 후 개별 안내드릴 예정입니다.</li>
+              <li>허위 작성 또는 타인의 후기를 도용한 경우 당첨 취소 및 경품 회수가 진행될 수 있습니다.</li>
+              <li>최우수 후기 당첨 시 경품 수령에 따른 제세공과금이 발생할 수 있습니다.</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">참여하기</span>
+          <div>
+            <a href="https://pr-challenge.wiawisjin-31e.workers.dev/" class="wiawis-promo-model-btn" target="_blank">챌린지 참여하기</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
+
+
+  /* ==========================================
    * 무이자 할부 (전 모델)
    * 사용: <div id="promo-card"></div>
    * ========================================== */
   "card": {
-    endDate: null,  // 상시 노출
+    endDate: null,
     category: "all",
     html: `
       <div class="wiawis-promo-item">
@@ -91,7 +164,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-xx1"></div>
    * ========================================== */
   "xx1": {
-    endDate: null,  // 상시 노출
+    endDate: null,
     category: "xx1",
     html: `
       <div class="wiawis-promo-item">
@@ -190,6 +263,13 @@ const WIAWIS_PROMOS = {
  * 카테고리 그룹 정의
  * ============================================ */
 const WIAWIS_CATEGORIES = {
+
+  /* ------ PERFORMANCE CHALLENGE ------ */
+  "challenge": {
+    title: "PERFORMANCE CHALLENGE",
+    sub: "위아위스로 PR 갱신 인증하고, 선물 받아가자!",
+    promos: ["challenge"]
+  },
 
   /* ------ SRAM / XX1 할인 ------ */
   "xx1": {
