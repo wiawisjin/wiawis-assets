@@ -802,8 +802,11 @@ function renderPromoPage() {
 
 /* ============================================
  * 개별 프로모션 렌더링 (모델 페이지용)
+ * - 등록된 프로모션 렌더링
+ * - 등록되지 않은 promo-xxx div 자동 제거
  * ============================================ */
 function renderIndividualPromos() {
+  // 등록된 프로모션 처리
   Object.keys(WIAWIS_PROMOS).forEach(function(key) {
     const el = document.getElementById("promo-" + key);
     if (el) {
@@ -813,6 +816,15 @@ function renderIndividualPromos() {
       } else {
         el.remove();
       }
+    }
+  });
+
+  // 등록되지 않은 promo-xxx div 자동 제거
+  document.querySelectorAll('[id^="promo-"]').forEach(function(el) {
+    const key = el.id.replace('promo-', '');
+    // promo-page는 제외 (전체 페이지용)
+    if (key !== 'page' && !WIAWIS_PROMOS[key]) {
+      el.remove();
     }
   });
 }
