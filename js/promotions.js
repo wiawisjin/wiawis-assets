@@ -152,7 +152,7 @@ const WIAWIS_PROMOS = {
           </div>
           <span class="wiawis-promo-section">대상 모델 보러가기</span>
           <div>
-            <a href="https://wiawis.com/bikes/kr/3/165/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">대상모델 보러가기</a>
+            <a href="https://wiawis.com/bikes/kr/3/200/category.do?dataId=263" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">대상모델 보러가기</a>
           </div>
         </div>
       </div>
