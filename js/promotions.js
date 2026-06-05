@@ -46,70 +46,18 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
-   * SUMMER PERFORMANCE FESTA - 로드
-   * 사용: <div id="promo-summer-road"></div>
-   * ========================================== */
-  "summer-road": {
-    startDate: "2099-12-31",  // 미공개 상태
-    endDate: "2026-07-30",
-    category: "summer",
-    html: `
-      <div class="wiawis-promo-item">
-        <div class="wiawis-promo-image">
-          <img src="" alt="WAWS 스페셜 에디션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="wiawis-promo-placeholder" style="display:flex;">
-            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
-            <span>PROMOTION</span>
-          </div>
-        </div>
-        <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">WAWS-PRO 2 & WAWS 2 스페셜 에디션</span>
-          <span class="wiawis-promo-desc">SRAM FORCE & RIVAL & ARC1100, 최고의 조합으로 완성된 궁극의 로드 사이클!</span>
-          <span class="wiawis-promo-period">기간 한정</span>
-
-          <span class="wiawis-promo-section">대상 모델</span>
-          <ul class="wiawis-promo-list">
-            <li><b>WAWS-PRO 2</b> : SRAM FORCE & DT SWISS ARC 1100</li>
-            <li><b>WAWS 2</b> : SRAM RIVAL & DT SWISS ARC 1100</li>
-          </ul>
-
-          <span class="wiawis-promo-section">구매 혜택</span>
-          <ul class="wiawis-promo-list">
-            <li>최대 <b class="text-red">200만원 할인!</b></li>
-          </ul>
-
-          <span class="wiawis-promo-section">스페셜 에디션 특징</span>
-          <ul class="wiawis-promo-list">
-            <li><b>최고의 기술 집약</b> : 위아위스 그래핀 나노카본(WINACT-G2) 프레임의 경량성, 강성, 진동흡수력과 스램 구동계의 정교함, ARC1100 휠셋의 에어로 성능이 완벽한 조화를 이룹니다.</li>
-            <li><b>압도적인 가성비</b> : 최상급 부품 구성에도 불구하고, 오직 이번 프로모션에서만 누릴 수 있는 특별한 가격으로 최고의 로드 사이클을 소유할 기회입니다.</li>
-          </ul>
-
-          <div class="wiawis-promo-notice">
-            <span class="wiawis-promo-notice-title">유의 사항</span>
-            <ul class="wiawis-promo-list">
-              <li>재고 한정으로 조기 종료될 수 있습니다.</li>
-              <li>자세한 사항은 가까운 대리점에 문의 바랍니다.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    `
-  },
-
-
-  /* ==========================================
    * SUMMER PERFORMANCE FESTA - 27.5 MTB
    * 사용: <div id="promo-summer-mtb"></div>
    * ========================================== */
   "summer-mtb": {
-    startDate: "2099-12-31",  // 미공개 상태
+    startDate: "2025-12-31",  // 미공개 상태
     endDate: "2026-07-30",
     category: "summer",
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="" alt="27.5 MTB 라인업" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="wiawis-promo-placeholder" style="display:flex;">
+          <img src="https://wiawis.com/upload/editor/202606156193535UCcKKCoUIi.jpg" alt="27.5 MTB 라인업" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
           </div>
@@ -148,7 +96,63 @@ const WIAWIS_PROMOS = {
 
           <span class="wiawis-promo-section">대상 모델 보러가기</span>
           <div>
-            <a href="https://wiawis.com/bikes/kr/2/2/category.do?dataId=165" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">27.5 MTB 라인업</a>
+            <a href="https://wiawis.com/bikes/kr/3/165/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">대상모델 보러가기</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
+
+
+  /* ==========================================
+   * SUMMER PERFORMANCE FESTA - 로드
+   * 사용: <div id="promo-summer-road"></div>
+   * ========================================== */
+  "summer-road": {
+    startDate: "2025-12-31",  // 미공개 상태
+    endDate: "2026-07-30",
+    category: "summer",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202606156191950FTn88eQB4v.png" alt="WAWS 스페셜 에디션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">WAWS-PRO 2 & WAWS 2 스페셜 에디션</span>
+          <span class="wiawis-promo-desc">SRAM FORCE & RIVAL & ARC1100, 최고의 조합으로 완성된 궁극의 로드 사이클!</span>
+          <span class="wiawis-promo-period">기간 한정</span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>WAWS-PRO 2</b> : SRAM FORCE & DT SWISS ARC 1100</li>
+            <li><b>WAWS 2</b> : SRAM RIVAL & DT SWISS ARC 1100</li>
+          </ul>
+
+          <span class="wiawis-promo-section">구매 혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>최대 <b class="text-red">200만원 할인!</b></li>
+          </ul>
+
+          <span class="wiawis-promo-section">스페셜 에디션 특징</span>
+          <ul class="wiawis-promo-list">
+            <li><b>최고의 기술 집약</b> : 위아위스 그래핀 나노카본(WINACT-G2) 프레임의 경량성, 강성, 진동흡수력과 스램 구동계의 정교함, ARC1100 휠셋의 에어로 성능이 완벽한 조화를 이룹니다.</li>
+            <li><b>압도적인 가성비</b> : 최상급 부품 구성에도 불구하고, 오직 이번 프로모션에서만 누릴 수 있는 특별한 가격으로 최고의 로드 사이클을 소유할 기회입니다.</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>재고 한정으로 조기 종료될 수 있습니다.</li>
+              <li>자세한 사항은 가까운 대리점에 문의 바랍니다.</li>
+            </ul>
+          </div>
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/165/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">대상모델 보러가기</a>
           </div>
         </div>
       </div>
@@ -161,7 +165,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-challenge"></div>
    * ========================================== */
   "challenge": {
-    startDate: "2026-06-01",
+    startDate: "2025-06-01",
     endDate: "2026-08-30",
     category: "challenge",
     html: `
@@ -384,7 +388,7 @@ const WIAWIS_CATEGORIES = {
   "summer": {
     title: "SUMMER PERFORMANCE FESTA",
     sub: "여름, 최고의 퍼포먼스를 경험하라!",
-    promos: ["summer-road", "summer-mtb", "challenge"]
+    promos: ["summer-mtb", "summer-road", "challenge"]
   },
 
   /* ------ PERFORMANCE CHALLENGE ------ */
