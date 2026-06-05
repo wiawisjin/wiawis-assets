@@ -18,6 +18,11 @@
  * - 해당 날짜 23:59:59 지나면 자동으로 안보임
  * - null = 상시 노출
  * 
+ * [startDate 설정]
+ * - "YYYY-MM-DD" 형식 (예: "2026-06-15")
+ * - 해당 날짜 전까지는 자동으로 안보임 (미공개 상태)
+ * - "2099-12-31" = 사실상 영구 미공개
+ * 
  * [이미지]
  * - 이미지 경로가 없거나 로드 실패 시 자동으로 placeholder 표시
  * 
@@ -38,6 +43,117 @@
  * 개별 프로모션 데이터
  * ============================================ */
 const WIAWIS_PROMOS = {
+
+
+  /* ==========================================
+   * SUMMER PERFORMANCE FESTA - 로드
+   * 사용: <div id="promo-summer-road"></div>
+   * ========================================== */
+  "summer-road": {
+    startDate: "2099-12-31",  // 미공개 상태
+    endDate: "2026-07-30",
+    category: "summer",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="" alt="WAWS 스페셜 에디션" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder" style="display:flex;">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">WAWS-PRO 2 & WAWS 2 스페셜 에디션</span>
+          <span class="wiawis-promo-desc">SRAM FORCE & RIVAL & ARC1100, 최고의 조합으로 완성된 궁극의 로드 사이클!</span>
+          <span class="wiawis-promo-period">기간 한정</span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>WAWS-PRO 2</b> : SRAM FORCE & DT SWISS ARC 1100</li>
+            <li><b>WAWS 2</b> : SRAM RIVAL & DT SWISS ARC 1100</li>
+          </ul>
+
+          <span class="wiawis-promo-section">구매 혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>최대 <b class="text-red">200만원 할인!</b></li>
+          </ul>
+
+          <span class="wiawis-promo-section">스페셜 에디션 특징</span>
+          <ul class="wiawis-promo-list">
+            <li><b>최고의 기술 집약</b> : 위아위스 그래핀 나노카본(WINACT-G2) 프레임의 경량성, 강성, 진동흡수력과 스램 구동계의 정교함, ARC1100 휠셋의 에어로 성능이 완벽한 조화를 이룹니다.</li>
+            <li><b>압도적인 가성비</b> : 최상급 부품 구성에도 불구하고, 오직 이번 프로모션에서만 누릴 수 있는 특별한 가격으로 최고의 로드 사이클을 소유할 기회입니다.</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>재고 한정으로 조기 종료될 수 있습니다.</li>
+              <li>자세한 사항은 가까운 대리점에 문의 바랍니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    `
+  },
+
+
+  /* ==========================================
+   * SUMMER PERFORMANCE FESTA - 27.5 MTB
+   * 사용: <div id="promo-summer-mtb"></div>
+   * ========================================== */
+  "summer-mtb": {
+    startDate: "2099-12-31",  // 미공개 상태
+    endDate: "2026-07-30",
+    category: "summer",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="" alt="27.5 MTB 라인업" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder" style="display:flex;">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">27.5인치 MTB 라인업 특별 할인</span>
+          <span class="wiawis-promo-desc">여름 시즌 한정, 짜릿한 오프로드 모험을 위한 특별 할인!</span>
+          <span class="wiawis-promo-period">기간: 6월 1일 ~ 7월 30일</span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>헥시온-G</b> : 경량 레이싱에 최적화된 고성능 MTB</li>
+            <li><b>볼티오 나노</b> : 민첩한 조작감과 뛰어난 반응성</li>
+            <li><b>볼티오</b> : 안정적인 주행감과 강력한 내구성</li>
+            <li><b>티에라</b> : 편안한 지오메트리로 장거리 라이딩에 적합</li>
+          </ul>
+
+          <span class="wiawis-promo-section">구매 혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>최대 <b class="text-red">179만원 할인!</b></li>
+          </ul>
+
+          <span class="wiawis-promo-section">27.5인치 MTB의 장점</span>
+          <ul class="wiawis-promo-list">
+            <li><b>최적의 컨트롤과 민첩성</b> : 27.5인치 휠은 다양한 지형에서 뛰어난 조향성과 반응성을 제공하여 다이내믹한 라이딩을 가능하게 합니다.</li>
+            <li><b>위아위스 카본 기술</b> : 위아위스만의 독자적인 카본 기술이 적용되어 뛰어난 내구성과 퍼포먼스를 자랑하며, 거친 환경에서도 라이더에게 안정감을 선사합니다.</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>재고 한정으로 조기 종료될 수 있습니다.</li>
+              <li>자세한 사항은 가까운 대리점에 문의 바랍니다.</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/2/2/category.do?dataId=165" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">27.5 MTB 라인업</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
 
 
   /* ==========================================
@@ -263,6 +379,13 @@ const WIAWIS_PROMOS = {
  * 카테고리 그룹 정의
  * ============================================ */
 const WIAWIS_CATEGORIES = {
+
+  /* ------ SUMMER PERFORMANCE FESTA ------ */
+  "summer": {
+    title: "SUMMER PERFORMANCE FESTA",
+    sub: "여름, 최고의 퍼포먼스를 경험하라!",
+    promos: ["summer-road", "summer-mtb", "challenge"]
+  },
 
   /* ------ PERFORMANCE CHALLENGE ------ */
   "challenge": {
