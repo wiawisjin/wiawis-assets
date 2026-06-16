@@ -166,7 +166,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "challenge": {
     startDate: "2025-06-01",
-    endDate: "2026-08-30",
+    endDate: "2025-08-30",     // 미공개 상태
     category: "challenge",
     html: `
       <div class="wiawis-promo-item">
