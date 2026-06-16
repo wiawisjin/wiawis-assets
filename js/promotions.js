@@ -166,7 +166,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "challenge": {
     startDate: "2025-06-01",
-    endDate: "2025-08-30",     // 미공개 상태
+    endDate: "2026-08-30",     
     category: "challenge",
     html: `
       <div class="wiawis-promo-item">
@@ -391,13 +391,7 @@ const WIAWIS_CATEGORIES = {
     promos: ["summer-mtb", "summer-road", "challenge"]
   },
 
-  /* ------ PERFORMANCE CHALLENGE ------ */
-  "challenge": {
-    title: "PERFORMANCE CHALLENGE",
-    sub: "위아위스로 PR 갱신 인증하고, 선물 받아가자!",
-    promos: ["challenge"]
-  },
-
+ 
   /* ------ SRAM / XX1 할인 ------ */
   "xx1": {
     title: "WELCOME 2026!",
