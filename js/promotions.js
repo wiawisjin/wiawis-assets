@@ -46,6 +46,160 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
+   * SUMMER BIKE CHECK
+   * 사용: <div id="promo-summer-check"></div>
+   * ========================================== */
+  "summer-check": {
+    startDate: "2026-07-01",
+    endDate: "2026-07-31",
+    category: "summer",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/2026071821533160TxcVnoHJb.jpg" alt="SUMMER BIKE CHECK" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">SUMMER BIKE CHECK</span>
+          <span class="wiawis-promo-desc">위아위스 라이더를 위한 무상 점검 서비스</span>
+          <span class="wiawis-promo-period">기간: 7월 1일 ~ 7월 31일</span>
+
+          <p class="wiawis-promo-text">점검 하나로, 흔들림도 망설임도 없는 여름을.<br><br>라이딩 전 완벽한 점검.<br>어떤 길에서도 흔들리지 않는 여름.</p>
+
+          <span class="wiawis-promo-section">대상</span>
+          <ul class="wiawis-promo-list">
+            <li>위아위스 라이더</li>
+            <li class="wiawis-promo-small">* 부품 및 소모품 교체 시 비용이 발생할 수 있습니다.</li>
+          </ul>
+          
+          
+          <span class="wiawis-promo-section">내용</span>
+          <ul class="wiawis-promo-list">
+            <li>위아위스 자전거 무상 점검</li>
+            <li class="wiawis-promo-small">* 부품 및 소모품 교체 시 비용이 발생할 수 있습니다.</li>
+          </ul>
+
+          <span class="wiawis-promo-section">이용 방법</span>
+          <ul class="wiawis-promo-list">
+            <li>대리점 전화 예약 후 방문</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">🎁 점검 인증하면 물통 사은품!</span>
+            <ul class="wiawis-promo-list">
+              <li>SNS에 점검 인증샷 + @wiawis_bike 태그</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">무상 점검 진행 대리점</span>
+          
+          <details class="wiawis-dealer-toggle">
+            <summary>서울</summary>
+            <table class="wiawis-dealer-table">
+              <tbody>
+                <tr><td>위아위스 올림픽공원점</td><td>강동구 강동대로 177</td><td>070-7802-5252</td></tr>
+                <tr><td>뚜르드벨로</td><td>노원구 동일로237다길 29</td><td>02-937-0808</td></tr>
+                <tr><td>킹바이크</td><td>중랑구 상봉로 100-1</td><td>0507-1470-9125</td></tr>
+                <tr><td>자타자</td><td>구로구 구로동로22길 78-2</td><td>0507-1318-8034</td></tr>
+                <tr><td>원사이클</td><td>서초구 방배중앙로 204</td><td>02-851-2813</td></tr>
+                <tr><td>사이클인</td><td>강동구 천중로 9</td><td>0507-1307-1279</td></tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details class="wiawis-dealer-toggle">
+            <summary>경기</summary>
+            <table class="wiawis-dealer-table">
+              <tbody>
+                <tr><td>순풍자전거</td><td>남양주시 진접읍 장현로 11</td><td>031-529-8266</td></tr>
+                <tr><td>얼바인 의정부점</td><td>의정부시 장곡로 442</td><td>031-848-4284</td></tr>
+                <tr><td>바이크캠프</td><td>고양시 덕양구 행주로 71</td><td>031-970-4793</td></tr>
+                <tr><td>자전거타고</td><td>시흥시 월곶중앙로46번길 26-1</td><td>070-8877-5333</td></tr>
+                <tr><td>BC자전거</td><td>김포시 고촌읍 아라육로58번길 97</td><td>010-4688-6954</td></tr>
+                <tr><td>올리브맨</td><td>경기 군포시 군포역2길 11</td><td>010-6635-4854</td></tr>
+                <tr><td>지구한바퀴</td><td>성남시 분당구 하오개로 362</td><td>031-718-0323</td></tr>
+                <tr><td>이휘윤업사</td><td>성남시 수정구 위례광장로 36</td><td>010-5138-7896</td></tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details class="wiawis-dealer-toggle">
+            <summary>충청</summary>
+            <table class="wiawis-dealer-table">
+              <tbody>
+                <tr><td>바이크피트</td><td>충주시 형설로 99-1</td><td>0507-1387-1335</td></tr>
+                <tr><td>월드바이크</td><td>제천시 의림대로 264</td><td>043-643-4491</td></tr>
+                <tr><td>씨엔제이</td><td>청주시 청원구 무심동로 530-1</td><td>043-236-4743</td></tr>
+                <tr><td>리버바이크</td><td>청주시 흥덕구 오송가락로 1056</td><td>010-9797-1231</td></tr>
+                <tr><td>바이크팩토리</td><td>천안시 서북구 불당16길 7</td><td>010-2299-5886</td></tr>
+                <tr><td>싸이클러리</td><td>대전 중구 유천로 75</td><td>0507-1413-1525</td></tr>
+                <tr><td>더웨이</td><td>대전 유성구 북유성대로 188</td><td>070-8828-0110</td></tr>
+                <tr><td>바이크스타일</td><td>대전 유성구 관들1길 8-7</td><td>042-931-3009</td></tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details class="wiawis-dealer-toggle">
+            <summary>대구/경북</summary>
+            <table class="wiawis-dealer-table">
+              <tbody>
+                <tr><td>팍스엠티비</td><td>김천시 부거리길 55</td><td>0507-1481-3804</td></tr>
+                <tr><td>블랙바이크</td><td>구미시 송선로 464</td><td>054-455-1009</td></tr>
+                <tr><td>바이크박스</td><td>대구 달서구 조암남로14안길 52</td><td>010-4221-5685</td></tr>
+                <tr><td>고라운드</td><td>대구 북구 성북로 63-1</td><td>053-359-0230</td></tr>
+                <tr><td>오투</td><td>대구 달서구 상화북로 75-1</td><td>053-636-0541</td></tr>
+                <tr><td>선데이모닝</td><td>대구 달서구 화암로 327</td><td>053-642-1980</td></tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details class="wiawis-dealer-toggle">
+            <summary>부산/울산/경남</summary>
+            <table class="wiawis-dealer-table">
+              <tbody>
+                <tr><td>오럼바이크</td><td>울산 중구 염포로 60</td><td>052-222-2358</td></tr>
+                <tr><td>HM바이크</td><td>양산시 물금읍 물금역2길 19</td><td>010-5225-1689</td></tr>
+                <tr><td>스피드엠티비</td><td>부산 남구 이기대공원로 16</td><td>051-623-0972</td></tr>
+                <tr><td>엠티비월드</td><td>부산 사상구 낙동대로 1222</td><td>010-7711-0204</td></tr>
+                <tr><td>엠티비랜드</td><td>부산 동래구 석사로 39</td><td>051-501-1133</td></tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details class="wiawis-dealer-toggle">
+            <summary>전라/광주</summary>
+            <table class="wiawis-dealer-table">
+              <tbody>
+                <tr><td>잭인더바이크</td><td>전주시 덕진구 사평로 74</td><td>063-272-6796</td></tr>
+                <tr><td>달려라자전거</td><td>익산시 하나로 441</td><td>0507-1377-1343</td></tr>
+                <tr><td>위너바이크</td><td>남원시 역재3길 19</td><td>010-8482-4852</td></tr>
+                <tr><td>랩360</td><td>광주 북구 양산택지로 140</td><td>062-572-2909</td></tr>
+                <tr><td>더바이시클</td><td>순천시 율산길 11</td><td>061-742-4626</td></tr>
+                <tr><td>뉴바이크</td><td>여수시 문수로 22</td><td>061-651-0032</td></tr>
+                <tr><td>가람119</td><td>목포시 영산로 683-1</td><td>061-283-2483</td></tr>
+              </tbody>
+            </table>
+          </details>
+
+          <details class="wiawis-dealer-toggle">
+            <summary>제주</summary>
+            <table class="wiawis-dealer-table">
+              <tbody>
+                <tr><td>제주싸이클</td><td>제주시 연삼로 520</td><td>070-7763-1320</td></tr>
+              </tbody>
+            </table>
+          </details>
+
+        </div>
+      </div>
+    `
+  },
+
+
+  /* ==========================================
    * SUMMER PERFORMANCE FESTA - 27.5 MTB
    * 사용: <div id="promo-summer-mtb"></div>
    * ========================================== */
@@ -388,7 +542,7 @@ const WIAWIS_CATEGORIES = {
   "summer": {
     title: "SUMMER PERFORMANCE FESTA",
     sub: "여름, 최고의 퍼포먼스를 경험하라!",
-    promos: ["summer-mtb", "summer-road", "challenge"]
+    promos: ["summer-check", "summer-mtb", "summer-road", "challenge"]
   },
 
  
@@ -678,6 +832,23 @@ const WIAWIS_PROMO_STYLES = `
   font-weight: 400;
 }
 
+.wiawis-promo-list li.wiawis-promo-small {
+  font-size: 13px;
+  color: #737373;
+}
+
+.wiawis-promo-list li.wiawis-promo-small::before {
+  content: '';
+}
+
+.wiawis-promo-text {
+  display: block !important;
+  font-size: 15px;
+  color: #262626;
+  line-height: 1.8;
+  margin: 16px 0;
+}
+
 .wiawis-promo-notice {
   display: block !important;
   margin-top: 24px;
@@ -773,6 +944,77 @@ const WIAWIS_PROMO_STYLES = `
   min-height: 300px;
 }
 
+/* 대리점 토글 */
+.wiawis-dealer-toggle {
+  display: block !important;
+  margin-top: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.wiawis-dealer-toggle summary {
+  display: block !important;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a0a0a;
+  background: #f9f9f9;
+  cursor: pointer;
+  list-style: none;
+}
+
+.wiawis-dealer-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.wiawis-dealer-toggle summary::before {
+  content: '▼';
+  font-size: 10px;
+  margin-right: 8px;
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.wiawis-dealer-toggle[open] summary::before {
+  transform: rotate(180deg);
+}
+
+.wiawis-dealer-toggle summary:hover {
+  background: #f0f0f0;
+}
+
+/* 대리점 테이블 */
+.wiawis-dealer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.wiawis-dealer-table td {
+  padding: 10px 12px;
+  border-top: 1px solid #e5e5e5;
+  color: #262626;
+  vertical-align: top;
+}
+
+.wiawis-dealer-table tr:hover {
+  background: #fafafa;
+}
+
+.wiawis-dealer-table td:first-child {
+  font-weight: 600;
+  width: 25%;
+}
+
+.wiawis-dealer-table td:nth-child(2) {
+  width: 50%;
+  color: #525252;
+}
+
+.wiawis-dealer-table td:last-child {
+  width: 25%;
+  color: #0a0a0a;
+}
+
 /* 반응형 */
 @media (max-width: 900px) {
   .wiawis-promo-item,
@@ -806,6 +1048,18 @@ const WIAWIS_PROMO_STYLES = `
 
   .wiawis-promo-category summary {
     padding: 20px 24px;
+  }
+
+  .wiawis-dealer-table td:first-child {
+    width: 30%;
+  }
+
+  .wiawis-dealer-table td:nth-child(2) {
+    width: 45%;
+  }
+
+  .wiawis-dealer-table td:last-child {
+    width: 25%;
   }
 }
 
@@ -847,6 +1101,36 @@ const WIAWIS_PROMO_STYLES = `
 
   .wiawis-promo-category-title {
     font-size: 18px;
+  }
+
+  .wiawis-dealer-table {
+    font-size: 12px;
+  }
+
+  .wiawis-dealer-table td {
+    padding: 8px;
+    display: block;
+    width: 100% !important;
+    border-top: none;
+  }
+
+  .wiawis-dealer-table tr {
+    display: block;
+    border-top: 1px solid #e5e5e5;
+    padding: 8px 0;
+  }
+
+  .wiawis-dealer-table td:first-child {
+    padding-bottom: 2px;
+  }
+
+  .wiawis-dealer-table td:nth-child(2) {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .wiawis-dealer-table td:last-child {
+    padding-top: 2px;
   }
 }
 </style>
