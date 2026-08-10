@@ -496,7 +496,7 @@ const WIAWIS_PROMOS = {
    * 사용: <div id="promo-lotte"></div>
    * ========================================== */
   "lotte": {
-    startDate: "2025-01-01",
+    startDate: "2025-09-16",
     endDate: "2026-09-30",
     category: "all",
     html: `
