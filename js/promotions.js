@@ -57,7 +57,10 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="https://wiawis.com/upload/editor/2026082371448044FHz59jZm5.jpg" alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/2026082371448044FHz59jZm5.jpg" 
+     alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타" 
+     style="object-position: right;"
+     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
