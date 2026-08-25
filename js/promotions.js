@@ -46,6 +46,50 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
+   * SUPER AERO FESTA (WAWS 2 시리즈 할인)
+   * 사용: <div id="promo-superaero"></div>
+   * 기간: 2026-08-24 ~ 2026-10-31
+   * ========================================== */
+  "superaero": {
+    startDate: "2026-08-24",
+    endDate: "2026-10-31",
+    category: "superaero",
+    html: `
+      <div class="wiawis-promo-item">
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/2026082371448044FHz59jZm5.jpg" alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">SUPER AERO FESTA</span>
+          <span class="wiawis-promo-desc">에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+
+          <p class="wiawis-promo-text">가장 빠른 선택은, 가장 좋은 조건일 때 완성됩니다.<br><br>에어로 로드의 기준, 와스(WAWS) 2 시리즈.<br>와스2 시리즈를 특별가로 만나십시오.<br><br>와스프로 XP 2 <span class="text-red">최대 25% 할인.</span></p>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>재고 소진 시 조기 종료될 수 있습니다</li>
+              <li>타 프로모션과 중복 적용 불가</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/10/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">WAWS 2 시리즈</a>
+          </div>
+        </div>
+      </div>
+    `
+  },
+
+
+  /* ==========================================
    * SUMMER BIKE CHECK
    * 사용: <div id="promo-summer-check"></div>
    * ========================================== */
@@ -537,6 +581,13 @@ const WIAWIS_PROMOS = {
  * 카테고리 그룹 정의
  * ============================================ */
 const WIAWIS_CATEGORIES = {
+
+  /* ------ SUPER AERO FESTA ------ */
+  "superaero": {
+    title: "SUPER AERO FESTA",
+    sub: "에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.",
+    promos: ["superaero"]
+  },
 
   /* ------ SUMMER PERFORMANCE FESTA ------ */
   "summer": {
