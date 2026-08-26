@@ -72,7 +72,6 @@ const WIAWIS_PROMOS = {
           <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
 
           <span class="wiawis-promo-desc">가장 빠른 선택은, 가장 좋은 조건일 때 완성됩니다.</span>
-          <span class="wiawis-promo-desc">에어로 로드의 기준, 와스(WAWS) 2 시리즈.</span>
           <span class="wiawis-promo-desc">와스프로 XP 2 <span class="text-red"><b>최대 25% 할인</b></span></span>
 
           
