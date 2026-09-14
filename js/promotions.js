@@ -554,7 +554,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "lotte": {
     startDate: "2026-09-16",
-    endDate: "2026-09-30",
+    endDate: "2026-12-31",
     category: "all",
     html: `
       <div class="wiawis-promo-item">
