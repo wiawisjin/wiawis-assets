@@ -523,7 +523,7 @@ const WIAWIS_PROMOS = {
           <li>WAWS 2 V</li>
           <li>WAWS 2 V CARRMATO ENT</li>
           <BR>
-          <li><b>XX1 AXS</b></li>
+          <li><strike><b>XX1 AXS</b></li>
           <li>HEXION-PRO R AXS</li>
           <li>ELNATH-PRO R AXS</li>
           <li>ELNATH R AXS</li>
@@ -532,15 +532,13 @@ const WIAWIS_PROMOS = {
           <li><b>XX1</b></li>
           <li>HEXION-PRO R</li>
           <li>ELNATH-PRO R</li>
-          <li>ELNATH R</li>
+          <li>ELNATH R</strike></li>
           </ul>
           </div>
           <span class="wiawis-promo-section">대상 모델 보러가기</span>
           <div>
           <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_FORCE_D2" class="wiawis-promo-model-btn">FORCE eTap AXS</a>
           <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_RIVAL_D1" class="wiawis-promo-model-btn">RIVAL eTap AXS</a>
-          <a href="https://wiawis.com/bikes/kr/2/5/category.do#XX1_AXS" class="wiawis-promo-model-btn">XX1 AXS</a>
-          <a href="https://wiawis.com/bikes/kr/2/5/category.do#XX1" class="wiawis-promo-model-btn">XX1</a>
           </div>
         </div>
       </div>
