@@ -557,7 +557,7 @@ const WIAWIS_PROMOS = {
     html: `
       <div class="wiawis-promo-item">
         <div class="wiawis-promo-image">
-          <img src="https://wiawis.com/upload/editor/202612365122029REeyhGBeN5.jpg" alt="무이자 할부" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/202609259104702ZjnwcxIPzq.png" alt="무이자 할부" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
