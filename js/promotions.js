@@ -566,7 +566,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">12 / 24개월 무이자 할부 & 최대 16만원 캐시백</span>
           <span class="wiawis-promo-desc">무이자 할부로 결제하고 최대 16만원 캐시백 받아가자</span>
-          <span class="wiawis-promo-period">~ 9월 30일</span>
+          <span class="wiawis-promo-period">~ 12월 31일</span>
           <br>
 
           <span class="wiawis-promo-section">상세 내용 보러가기</span>
