@@ -321,7 +321,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "summer-road": {
     startDate: "2025-12-31",  // 미공개 상태
-    endDate: "2026-09-30",
+    endDate: "2026-07-30",
     category: "summer",
     html: `
       <div class="wiawis-promo-item">
@@ -507,8 +507,8 @@ const WIAWIS_PROMOS = {
           </div>
         </div>
         <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">2026년 붉은 말 프로모션</span>
-          <span class="wiawis-promo-desc">붉은 말의 새해의 시작! 최대 30% 할인으로 완벽한 시작!</span>
+          <span class="wiawis-promo-title">WIAWIS PRIME DEAL</span>
+          <span class="wiawis-promo-desc">위아위스가 엄선한 가장 좋은 조건으로!</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
           <div>
@@ -523,16 +523,6 @@ const WIAWIS_PROMOS = {
           <li>WAWS 2 V</li>
           <li>WAWS 2 V CARRMATO ENT</li>
           <BR>
-          <li><strike><b>XX1 AXS</b></li>
-          <li>HEXION-PRO R AXS</li>
-          <li>ELNATH-PRO R AXS</li>
-          <li>ELNATH R AXS</li>
-          <li>HEXION-G R AXS</li>
-          <BR>
-          <li><b>XX1</b></li>
-          <li>HEXION-PRO R</li>
-          <li>ELNATH-PRO R</li>
-          <li>ELNATH R</strike></li>
           </ul>
           </div>
           <span class="wiawis-promo-section">대상 모델 보러가기</span>
