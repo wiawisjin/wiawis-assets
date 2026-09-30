@@ -262,7 +262,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "summer-mtb": {
     startDate: "2025-12-31",  // 미공개 상태
-    endDate: "2026-09-30",
+    endDate: "2026-10-31",
     category: "summer",
     html: `
       <div class="wiawis-promo-item">
@@ -276,7 +276,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">27.5인치 MTB 라인업 특별 할인</span>
           <span class="wiawis-promo-desc">여름 시즌 한정, 짜릿한 오프로드 모험을 위한 특별 할인!</span>
-          <span class="wiawis-promo-period">기간: 6월 1일 ~ 9월 30일</span>
+          <span class="wiawis-promo-period">기간: 6월 1일 ~ 10월 31일</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
           <ul class="wiawis-promo-list">
