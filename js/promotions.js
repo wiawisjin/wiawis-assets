@@ -56,33 +56,52 @@ const WIAWIS_PROMOS = {
     category: "superaero",
     html: `
       <div class="wiawis-promo-item">
+
+        <!-- ===== 이미지 (여러 개 쌓으면 하루 단위 랜덤, 1개면 고정) ===== -->
         <div class="wiawis-promo-image">
-          <img src="https://wiawis.com/upload/editor/2026082371448044FHz59jZm5.jpg" 
-     alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타" 
-     style="object-position: right;"
-     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/202610274161237qsS2iLXELy.jpeg" style="object-position: 45% 35%;" alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
           </div>
         </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161248khKXz9ROgG.jpeg" style="object-position: 50% 45%;" alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161627hL1CkeCQUw.jpg" style="object-position: 71% 40%;" alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161632jbBDFZa3uo.jpg" style="object-position: 25% 30%;" alt="와스 2 시리즈 에어로 로드 할인 프로모션 슈퍼 에어로 페스타 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+
+        <!-- ===== content (여러 개 쌓으면 하루 단위 랜덤, 1개면 고정) ===== -->
+
+        <!-- ===== content 세트1 · 와스프로 XP 2 ===== -->
         <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">SUPER AERO FESTA</span>
-          <span class="wiawis-promo-desc">에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.</span>
+          <span class="wiawis-promo-title">와스프로 XP 2, 최대 25%</span>
+          <span class="wiawis-promo-desc">SUPER AERO FESTA. 에어로의 정점을 가장 좋은 조건으로.</span>
           <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
 
-          <span class="wiawis-promo-desc">가장 빠른 선택은, 가장 좋은 조건일 때 완성됩니다.</span>
-          <span class="wiawis-promo-desc">와스프로 XP 2 <span class="text-red"><b>최대 25% 할인</b></span></span>
-
-          
           <span class="wiawis-promo-section">대상 모델</span>
           <ul class="wiawis-promo-list">
-            <li><b>WAWS-PRO XP 2</b></li>
-            <li><b>WAWS-PRO 2</b></li>
-            <li><b>WAWS 2</b></li>
+            <li><b>와스프로 XP 2</b> : DURA-ACE / RED E1</li>
+            <li><b>와스프로 2</b> : FORCE E1 / ULTEGRA</li>
+            <li><b>와스 2</b> : FORCE E1 / ULTEGRA / RIVAL E1 / 105 Di2</li>
           </ul>
 
-          
           <div class="wiawis-promo-notice">
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
@@ -97,6 +116,134 @@ const WIAWIS_PROMOS = {
             <a href="https://wiawis.com/bikes/kr/3/10/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">WAWS 2 시리즈</a>
           </div>
         </div>
+
+        <!-- ===== content 세트2 · 와스프로 2 ===== -->
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">와스프로 2, 최대 211만원 할인</span>
+          <span class="wiawis-promo-desc">SUPER AERO FESTA. 레이스 퍼포먼스를 가장 좋은 조건으로.</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>와스프로 2</b> : FORCE E1 / ULTEGRA</li>
+            <li><b>와스프로 XP 2</b> : DURA-ACE / RED E1</li>
+            <li><b>와스 2</b> : FORCE E1 / ULTEGRA / RIVAL E1 / 105 Di2</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>재고 소진 시 조기 종료될 수 있습니다</li>
+              <li>타 프로모션과 중복 적용 불가</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/10/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">WAWS 2 시리즈</a>
+          </div>
+        </div>
+
+        <!-- ===== content 세트3 · 와스 2 ===== -->
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">와스 2, 448만원부터</span>
+          <span class="wiawis-promo-desc">SUPER AERO FESTA. 에어로 로드의 시작을 가장 좋은 조건으로.</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>와스 2</b> : FORCE E1 / ULTEGRA / RIVAL E1 / 105 Di2</li>
+            <li><b>와스프로 2</b> : FORCE E1 / ULTEGRA</li>
+            <li><b>와스프로 XP 2</b> : DURA-ACE / RED E1</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>재고 소진 시 조기 종료될 수 있습니다</li>
+              <li>타 프로모션과 중복 적용 불가</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/10/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">WAWS 2 시리즈</a>
+          </div>
+        </div>
+
+        <!-- ===== content 세트4 · 테크 ===== -->
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">공기를 설계하다</span>
+          <span class="wiawis-promo-desc">SUPER AERO FESTA. 와스(WAWS) 2 시리즈 특별가.</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+
+          <span class="wiawis-promo-section">와스(WAWS) 2가 빠른 이유</span>
+          <ul class="wiawis-promo-list">
+            <li><b>CFD 에어로 설계</b> : 공기 흐름을 따라 다듬은 프레임 형상</li>
+            <li><b>그래핀 나노카본</b> : 가볍고 단단하게, 노면 진동은 부드럽게</li>
+            <li><b>국내 설계·생산</b> : 설계부터 제작까지, 직접 만든 완성도</li>
+          </ul>
+
+          <span class="wiawis-promo-section">혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>와스(WAWS) 2 시리즈 <span class="text-red"><b>최대 25% 할인</b></span></li>
+          </ul>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>와스프로 XP 2</b> : DURA-ACE / RED E1</li>
+            <li><b>와스프로 2</b> : FORCE E1 / ULTEGRA</li>
+            <li><b>와스 2</b> : FORCE E1 / ULTEGRA / RIVAL E1 / 105 Di2</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>재고 소진 시 조기 종료될 수 있습니다</li>
+              <li>타 프로모션과 중복 적용 불가</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/10/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">WAWS 2 자세히 보기</a>
+          </div>
+        </div>
+
+        <!-- ===== content 세트5 · 기존 문구 ===== -->
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">SUPER AERO FESTA</span>
+          <span class="wiawis-promo-desc">에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+
+          <span class="wiawis-promo-desc">가장 빠른 선택은, 가장 좋은 조건일 때 완성됩니다.</span>
+          <span class="wiawis-promo-desc">와스프로 XP 2 <span class="text-red"><b>최대 25% 할인</b></span></span>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>와스프로 XP 2</b> : DURA-ACE / RED E1</li>
+            <li><b>와스프로 2</b> : FORCE E1 / ULTEGRA</li>
+            <li><b>와스 2</b> : FORCE E1 / ULTEGRA / RIVAL E1 / 105 Di2</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>재고 소진 시 조기 종료될 수 있습니다</li>
+              <li>타 프로모션과 중복 적용 불가</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/10/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">WAWS 2 시리즈</a>
+          </div>
+        </div>
+
       </div>
     `
   },
@@ -1211,6 +1358,37 @@ function isPromoActive(startDate, endDate) {
 
 
 /* ============================================
+ * 랜덤 노출 (하루 1회 고정 + 전날과 다름)
+ * - 한 프로모션 안에 .wiawis-promo-image 가 여러 개면 하루 기준 1개만 남김
+ * - .wiawis-promo-content 가 여러 개면 하루 기준 1개만 남김
+ * - 1개면 그대로 고정 / 이미지와 content는 독립 선택
+ * ============================================ */
+function wiawisDailyIndex(count, mult, offset) {
+  const d = Math.floor(Date.now() / 86400000);
+  return (((d * mult + offset) % count) + count) % count;
+}
+
+function wiawisPickOne(itemEl, selector, mult, offset) {
+  const blocks = Array.prototype.slice.call(itemEl.children).filter(function (el) {
+    return el.matches && el.matches(selector);
+  });
+  if (blocks.length <= 1) return;
+  const keep = wiawisDailyIndex(blocks.length, mult, offset);
+  blocks.forEach(function (el, i) {
+    if (i !== keep) el.parentNode.removeChild(el);
+  });
+}
+
+function wiawisApplyRandomAll(root) {
+  const items = (root || document).querySelectorAll('.wiawis-promo-item');
+  for (let i = 0; i < items.length; i++) {
+    wiawisPickOne(items[i], '.wiawis-promo-image', 1, 0);
+    wiawisPickOne(items[i], '.wiawis-promo-content', 7, 3);
+  }
+}
+
+
+/* ============================================
  * 프로모션 페이지 렌더링 (전체)
  * ============================================ */
 function renderPromoPage() {
@@ -1254,6 +1432,7 @@ function renderPromoPage() {
 
   html += '</div>';
   pageEl.innerHTML = html;
+  wiawisApplyRandomAll(pageEl);
 }
 
 
@@ -1270,6 +1449,7 @@ function renderIndividualPromos() {
       const promo = WIAWIS_PROMOS[key];
       if (isPromoActive(promo.startDate, promo.endDate)) {
         el.innerHTML = promo.html;
+        wiawisApplyRandomAll(el);
       } else {
         el.remove();
       }
