@@ -660,11 +660,7 @@ const WIAWIS_PROMOS = {
           <span class="wiawis-promo-section">대상 모델</span>
           <div>
           <ul class="wiawis-promo-list">
-          <li><b>FORCE eTap AXS</b></li>
-          <li>WAWS-PRO 2 F</li>
-          <li>RADICAL-PRO F</li>
-          <li>RADICAL-M F</li>
-          <li>RADICAL-M F CARRMATO ENT CARBON</li>
+
           <BR>
           <li><b>RIVAL eTap AXS</b></li>
           <li>WAWS 2 V</li>
@@ -674,7 +670,7 @@ const WIAWIS_PROMOS = {
           </div>
           <span class="wiawis-promo-section">대상 모델 보러가기</span>
           <div>
-          <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_FORCE_D2" class="wiawis-promo-model-btn">FORCE eTap AXS</a>
+          
           <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_RIVAL_D1" class="wiawis-promo-model-btn">RIVAL eTap AXS</a>
           </div>
         </div>
