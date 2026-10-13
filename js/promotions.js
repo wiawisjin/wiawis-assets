@@ -250,6 +250,91 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
+   * FALL IN WIAWIS (RADICAL-M 카본 핸들바 무상 업그레이드)
+   * 사용: <div id="promo-fall"></div>
+   * - 기간 표시 없음 / 노출 시작일은 startDate 로 조정
+   * - 사진: SUPER AERO FESTA 와 같은 4장 사용
+   *   data-random-offset="2" → 같은 날 슈퍼 에어로 페스타와 다른 사진이 나옴
+   * ========================================== */
+  "fall": {
+    startDate: "2099-12-31",   // 준비 상태(미공개). 공개할 날짜로 변경
+    endDate: null,
+    category: "fall",
+    html: `
+      <div class="wiawis-promo-item" data-random-offset="2">
+
+        <!-- ===== 이미지 (여러 개 쌓으면 하루 단위 랜덤, 1개면 고정) ===== -->
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161237qsS2iLXELy.jpeg" style="object-position: 45% 35%;" alt="RADICAL-M 카본 핸들바 무상 업그레이드 FALL IN WIAWIS 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161248khKXz9ROgG.jpeg" style="object-position: 50% 45%;" alt="RADICAL-M 카본 핸들바 무상 업그레이드 FALL IN WIAWIS 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161627hL1CkeCQUw.jpg" style="object-position: 71% 40%;" alt="RADICAL-M 카본 핸들바 무상 업그레이드 FALL IN WIAWIS 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161632jbBDFZa3uo.jpg" style="object-position: 25% 30%;" alt="RADICAL-M 카본 핸들바 무상 업그레이드 FALL IN WIAWIS 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+
+        <!-- ===== content ===== -->
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">FALL IN WIAWIS</span>
+          <span class="wiawis-promo-desc">가을 라이딩, 핸들바 카본 업그레이드로 완성하다</span>
+
+          <span class="wiawis-promo-section">혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>알로이 핸들바 → <b>카르마토 카본 일체형 핸들바 무상 업그레이드</b></li>
+            <li>55만원 상당 HB-RADICAL AI ENT, 추가 비용 없이 장착</li>
+          </ul>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>RADICAL-M B</b> : ULTEGRA Di2</li>
+            <li><b>RADICAL-M F</b> : FORCE eTap AXS</li>
+            <li><b>RADICAL-M V</b> : RIVAL eTap AXS</li>
+            <li><b>RADICAL-M C</b> : 105 Di2</li>
+            <li class="wiawis-promo-small">* 기계식 구동계 모델 제외</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>핸들바 재고 소진 시 조기 종료될 수 있습니다</li>
+              <li>타 프로모션과 중복 적용 불가</li>
+              <li>사이즈 등 자세한 사항은 가까운 대리점에 문의 바랍니다</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/11/category.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">RADICAL-M 보러가기</a>
+            <a href="https://wiawis.com/bikes/kr/1/2/567/view.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">핸들바 보러가기</a>
+          </div>
+        </div>
+
+      </div>
+    `
+  },
+
+
+  /* ==========================================
    * SUMMER BIKE CHECK
    * 사용: <div id="promo-summer-check"></div>
    * ========================================== */
@@ -638,42 +723,80 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
-   * XX1 프로모션
-   * 사용: <div id="promo-xx1"></div>
+   * WIAWIS SUPER PRIME DEAL (SRAM RIVAL D1 최대 33%)
+   * 사용: <div id="promo-xx1"></div>  ※ 키는 기존 xx1 유지 (소환 코드 그대로)
+   * - 사진: FALL IN WIAWIS·SUPER AERO FESTA 와 같은 4장
+   *   data-random-offset="1" → 에어로 페스타(0)·FALL(2)과 같은 날 다른 사진
    * ========================================== */
   "xx1": {
     endDate: null,
     category: "xx1",
     html: `
-      <div class="wiawis-promo-item">
+      <div class="wiawis-promo-item" data-random-offset="1">
+
+        <!-- ===== 이미지 (여러 개 쌓으면 하루 단위 랜덤, 1개면 고정) ===== -->
         <div class="wiawis-promo-image">
-          <img src="https://wiawis.com/upload/editor/202510282174533tvcJSMRvQH.png" alt="콕핏 업그레이드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="https://wiawis.com/upload/editor/202610274161237qsS2iLXELy.jpeg" style="object-position: 45% 35%;" alt="WIAWIS SUPER PRIME DEAL SRAM RIVAL D1 카본 로드바이크 할인 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="wiawis-promo-placeholder">
             <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
             <span>PROMOTION</span>
           </div>
         </div>
-        <div class="wiawis-promo-content">
-          <span class="wiawis-promo-title">WIAWIS PRIME DEAL</span>
-          <span class="wiawis-promo-desc">위아위스가 엄선한 가장 좋은 조건으로!</span>
-
-          <span class="wiawis-promo-section">대상 모델</span>
-          <div>
-          <ul class="wiawis-promo-list">
-
-          <BR>
-          <li><b>RIVAL eTap AXS</b></li>
-          <li>WAWS 2 V</li>
-          <li>WAWS 2 V CARRMATO ENT</li>
-          <BR>
-          </ul>
-          </div>
-          <span class="wiawis-promo-section">대상 모델 보러가기</span>
-          <div>
-          
-          <a href="https://wiawis.com/bikes/kr/2/5/category.do#SRAM_RIVAL_D1" class="wiawis-promo-model-btn">RIVAL eTap AXS</a>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161248khKXz9ROgG.jpeg" style="object-position: 50% 45%;" alt="WIAWIS SUPER PRIME DEAL SRAM RIVAL D1 카본 로드바이크 할인 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
           </div>
         </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161627hL1CkeCQUw.jpg" style="object-position: 71% 40%;" alt="WIAWIS SUPER PRIME DEAL SRAM RIVAL D1 카본 로드바이크 할인 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/upload/editor/202610274161632jbBDFZa3uo.jpg" style="object-position: 25% 30%;" alt="WIAWIS SUPER PRIME DEAL SRAM RIVAL D1 카본 로드바이크 할인 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+
+        <!-- ===== content ===== -->
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">WIAWIS SUPER PRIME DEAL</span>
+          <span class="wiawis-promo-desc">더 합리적인 가격으로 WIAWIS 카본 로드바이크를 시작해 보세요.</span>
+
+          <span class="wiawis-promo-section">혜택</span>
+          <ul class="wiawis-promo-list">
+            <li>SRAM RIVAL D1 장착 모델 <span class="text-red"><b>최대 33% 할인</b></span></li>
+          </ul>
+
+          <span class="wiawis-promo-section">대상 모델</span>
+          <ul class="wiawis-promo-list">
+            <li><b>WAWS-PRO 2 V</b></li>
+            <li><b>WAWS 2 V</b></li>
+            <li><b>WAWS 2 V</b> CARRMATO CXT-R50 ENT CARBON</li>
+            <li><b>RADICAL-M V</b> CARRMATO CXT-R40 ENT CARBON</li>
+            <li><b>RADICAL-M V</b></li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">유의 사항</span>
+            <ul class="wiawis-promo-list">
+              <li>재고 소진 시 조기 종료될 수 있습니다</li>
+              <li>타 프로모션과 중복 적용 불가</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">대상 모델 보러가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/3/200/category.do?dataId=250" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">SUPER PRIME DEAL 모델 보기</a>
+          </div>
+        </div>
+
       </div>
     `
   },
@@ -726,11 +849,25 @@ const WIAWIS_PROMOS = {
  * ============================================ */
 const WIAWIS_CATEGORIES = {
 
+  /* ------ WIAWIS SUPER PRIME DEAL (SRAM RIVAL D1) ------ */
+  "xx1": {
+    title: "WIAWIS SUPER PRIME DEAL",
+    sub: "더 강력해진 혜택, 최대 33% 할인",
+    promos: ["xx1"]
+  },
+
   /* ------ SUPER AERO FESTA ------ */
   "superaero": {
     title: "SUPER AERO FESTA",
     sub: "에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.",
     promos: ["superaero"]
+  },
+
+  /* ------ FALL IN WIAWIS ------ */
+  "fall": {
+    title: "FALL IN WIAWIS",
+    sub: "가을 라이딩, 핸들바 카본 업그레이드로 완성하다",
+    promos: ["fall"]
   },
 
   /* ------ SUMMER PERFORMANCE FESTA ------ */
@@ -741,12 +878,6 @@ const WIAWIS_CATEGORIES = {
   },
 
  
-  /* ------ SRAM / XX1 할인 ------ */
-  "xx1": {
-    title: "WELCOME 2026!",
-    sub: "2026년을 맞아 드리는 특별한 혜택",
-    promos: ["xx1"]
-  },
 
   /* ------ 전 모델 대상 ------ */
   "all": {
@@ -1378,8 +1509,9 @@ function wiawisPickOne(itemEl, selector, mult, offset) {
 function wiawisApplyRandomAll(root) {
   const items = (root || document).querySelectorAll('.wiawis-promo-item');
   for (let i = 0; i < items.length; i++) {
-    wiawisPickOne(items[i], '.wiawis-promo-image', 1, 0);
-    wiawisPickOne(items[i], '.wiawis-promo-content', 7, 3);
+    var off = parseInt(items[i].getAttribute('data-random-offset') || '0', 10);
+    wiawisPickOne(items[i], '.wiawis-promo-image', 1, 0 + off);
+    wiawisPickOne(items[i], '.wiawis-promo-content', 7, 3 + off);
   }
 }
 
