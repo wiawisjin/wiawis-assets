@@ -52,7 +52,7 @@ const WIAWIS_PROMOS = {
    * ========================================== */
   "superaero": {
     startDate: "2026-08-24",
-    endDate: "2026-10-31",
+    endDate: "2026-11-30",
     category: "superaero",
     html: `
       <div class="wiawis-promo-item">
@@ -93,7 +93,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">와스프로 XP 2, 최대 25%</span>
           <span class="wiawis-promo-desc">SUPER AERO FESTA. 에어로의 정점을 가장 좋은 조건으로.</span>
-          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 11월 30일</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
           <ul class="wiawis-promo-list">
@@ -105,7 +105,7 @@ const WIAWIS_PROMOS = {
           <div class="wiawis-promo-notice">
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
-              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>기간 : 8월 24일 ~ 11월 30일까지</li>
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
               <li>타 프로모션과 중복 적용 불가</li>
             </ul>
@@ -121,7 +121,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">와스프로 2, 최대 211만원 할인</span>
           <span class="wiawis-promo-desc">SUPER AERO FESTA. 레이스 퍼포먼스를 가장 좋은 조건으로.</span>
-          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 11월 30일</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
           <ul class="wiawis-promo-list">
@@ -133,7 +133,7 @@ const WIAWIS_PROMOS = {
           <div class="wiawis-promo-notice">
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
-              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>기간 : 8월 24일 ~ 11월 30일까지</li>
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
               <li>타 프로모션과 중복 적용 불가</li>
             </ul>
@@ -149,7 +149,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">와스 2, 448만원부터</span>
           <span class="wiawis-promo-desc">SUPER AERO FESTA. 에어로 로드의 시작을 가장 좋은 조건으로.</span>
-          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 11월 30일</span>
 
           <span class="wiawis-promo-section">대상 모델</span>
           <ul class="wiawis-promo-list">
@@ -161,7 +161,7 @@ const WIAWIS_PROMOS = {
           <div class="wiawis-promo-notice">
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
-              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>기간 : 8월 24일 ~ 11월 30일까지</li>
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
               <li>타 프로모션과 중복 적용 불가</li>
             </ul>
@@ -177,7 +177,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">공기를 설계하다</span>
           <span class="wiawis-promo-desc">SUPER AERO FESTA. 와스(WAWS) 2 시리즈 특별가.</span>
-          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 11월 30일</span>
 
           <span class="wiawis-promo-section">와스(WAWS) 2가 빠른 이유</span>
           <ul class="wiawis-promo-list">
@@ -201,7 +201,7 @@ const WIAWIS_PROMOS = {
           <div class="wiawis-promo-notice">
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
-              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>기간 : 8월 24일 ~ 11월 30일까지</li>
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
               <li>타 프로모션과 중복 적용 불가</li>
             </ul>
@@ -217,7 +217,7 @@ const WIAWIS_PROMOS = {
         <div class="wiawis-promo-content">
           <span class="wiawis-promo-title">SUPER AERO FESTA</span>
           <span class="wiawis-promo-desc">에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.</span>
-          <span class="wiawis-promo-period">기간: 8월 24일 ~ 10월 31일</span>
+          <span class="wiawis-promo-period">기간: 8월 24일 ~ 11월 30일</span>
 
           <span class="wiawis-promo-desc">가장 빠른 선택은, 가장 좋은 조건일 때 완성됩니다.</span>
           <span class="wiawis-promo-desc">와스프로 XP 2 <span class="text-red"><b>최대 25% 할인</b></span></span>
@@ -232,7 +232,7 @@ const WIAWIS_PROMOS = {
           <div class="wiawis-promo-notice">
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
-              <li>기간 : 8월 24일 ~ 10월 31일까지</li>
+              <li>기간 : 8월 24일 ~ 11월 30일까지</li>
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
               <li>타 프로모션과 중복 적용 불가</li>
             </ul>
