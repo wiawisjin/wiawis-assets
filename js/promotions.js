@@ -849,6 +849,13 @@ const WIAWIS_PROMOS = {
  * ============================================ */
 const WIAWIS_CATEGORIES = {
 
+  /* ------ SUPER AERO FESTA ------ */
+  "superaero": {
+    title: "SUPER AERO FESTA",
+    sub: "에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.",
+    promos: ["superaero"]
+  },
+  
   /* ------ WIAWIS SUPER PRIME DEAL (SRAM RIVAL D1) ------ */
   "xx1": {
     title: "WIAWIS SUPER PRIME DEAL",
@@ -856,12 +863,7 @@ const WIAWIS_CATEGORIES = {
     promos: ["xx1"]
   },
 
-  /* ------ SUPER AERO FESTA ------ */
-  "superaero": {
-    title: "SUPER AERO FESTA",
-    sub: "에어로 로드의 정점, 와스(WAWS) 2 시리즈. 지금 단 한 번의 조건.",
-    promos: ["superaero"]
-  },
+
 
   /* ------ FALL IN WIAWIS ------ */
   "fall": {
