@@ -46,6 +46,100 @@ const WIAWIS_PROMOS = {
 
 
   /* ==========================================
+   * WIAWIS CUSTOM COLOR WEEKS (커스텀 컬러 · 신규 주문 & 재도장)
+   *   부제: MY FIRST WIAWIS, MY NEXT STYLE
+   * 사용: <div id="promo-custom"></div>
+   * 기간: 2026-11-02 ~ 2026-12-27 주문분
+   * - 사진: 다른 프로모션과 같은 4장 사용
+   *   data-random-offset="3" → 에어로(0)·프라임(1)·FALL(2)과 같은 날 다른 사진
+   * ========================================== */
+  "custom": {
+    startDate: "2026-11-02",
+    endDate: "2026-12-27",
+    category: "custom",
+    html: `
+      <div class="wiawis-promo-item">
+
+        <!-- ===== 이미지 (여러 개 쌓으면 하루 단위 랜덤, 1개면 고정) ===== -->
+        <div class="wiawis-promo-image">
+          <img src="https://wiawis.com/images/bikes/custom_new/custom_bg.png" alt="WIAWIS CUSTOM COLOR WEEKS 위아위스 커스텀 컬러 프로모션 신규 주문 재도장" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="wiawis-promo-placeholder">
+            <img src="https://wiawis.com/upload/editor/202512344152326xiqlB4h2ov.png" alt="WIAWIS">
+            <span>PROMOTION</span>
+          </div>
+        </div>
+
+        <!-- ===== content ===== -->
+        <div class="wiawis-promo-content">
+          <span class="wiawis-promo-title">WIAWIS CUSTOM COLOR WEEKS</span>
+          <span class="wiawis-promo-desc">MY FIRST WIAWIS, MY NEXT STYLE<br><span class="text-red"><b>커스텀 컬러 최대 130만원 혜택</b></span></span>
+          <span class="wiawis-promo-period">기간: ~ 12월 27일</span>
+
+          <span class="wiawis-promo-desc">처음부터 나답게, 다시 한번 새롭게!<br>새로 만나는 WIAWIS는 내가 선택한 컬러로, 함께 달려온 WIAWIS는 새로운 스타일로!<br></span>
+
+          <span class="wiawis-promo-section">MY FIRST WIAWIS — 신규 주문 시 커스텀 비용</span>
+          <table class="wiawis-promo-table">
+            <thead>
+              <tr><th>구분</th><th>싱글</th><th>더블 / 페이드</th><th>디자이너</th></tr>
+            </thead>
+            <tbody>
+              <tr><th>XP</th><td class="free">무상</td><td class="free">무상</td><td class="free">무상</td></tr>
+              <tr><th>PRO</th><td class="free">무상</td><td class="free">무상</td><td>30% 할인</td></tr>
+              <tr><th>기본</th><td class="free">무상</td><td>50% 할인</td><td>30% 할인</td></tr>
+            </tbody>
+          </table>
+
+          <span class="wiawis-promo-section">MY NEXT STYLE — 재도장 시 커스텀 비용</span>
+          
+          <table class="wiawis-promo-table">
+            <thead>
+              <tr><th>싱글</th><th>더블 / 페이드</th><th>디자이너</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>50% 할인</td><td>50% 할인</td><td>30% 할인</td></tr>
+            </tbody>
+          </table>
+
+          <span class="wiawis-promo-section">대상 모델 (신규 주문)</span>
+          <ul class="wiawis-promo-list">
+            <li><b>XP</b></li>
+            <li class="wiawis-promo-small">ROAD : VENTER / WAWS-PRO XP 2 / RADICAL-PRO XP 2</li>
+            <li class="wiawis-promo-small">MTB : HEXION-PRO XP / HEXION-G</li>
+            <li><b>PRO</b></li>
+            <li class="wiawis-promo-small">ROAD : WAWS-PRO 2 / RADICAL-PRO 2</li>
+            <li class="wiawis-promo-small">MTB : HEXION-PRO / ELNATH-PRO / ALPECA-PRO / VOLTIO NANO</li>
+            <li><b>기본</b></li>
+            <li class="wiawis-promo-small">ROAD : WAWS 2 / RADICAL-M</li>
+            <li class="wiawis-promo-small">MTB : ELNATH / ALPECA / VOLTIO / TIERA</li>
+            <li class="wiawis-promo-small">GRAVEL : TUSCIA</li>
+          </ul>
+
+          <div class="wiawis-promo-notice">
+            <span class="wiawis-promo-notice-title">기타 안내</span>
+            <ul class="wiawis-promo-list">
+              <li>프로모션 진행 중인 모델도 동일하게 적용됩니다</li>
+              <li>트랙·BMX 및 프레임셋 구매는 대상에서 제외됩니다</li>
+              <li>재도장 시 일반 컬러에서 UD 마감으로는 변경 불가합니다</li>
+              <li>싯포스트·핸들바 컬러 커스텀은 개별 10만원이 추가됩니다</li>
+             <li>컬러 선택에는 제한이 없으나, 제작이 어려운 경우 사전문의 바랍니다</li> 
+              <li>제작 기간은 최소 3주 이상 소요되며, 모델 및 선택 사양에 따라 달라질 수 있습니다</li>
+              <li>자세한 사항은 가까운 위아위스 대리점에 문의 바랍니다</li>
+            </ul>
+          </div>
+
+          <span class="wiawis-promo-section">바로가기</span>
+          <div>
+            <a href="https://wiawis.com/bikes/kr/custom/new.do" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">커스텀 컬러 시작하기</a>
+            <a href="https://wiawis.com/kr/bikesBranch" class="wiawis-promo-model-btn" target="_blank" rel="noopener noreferrer">대리점 찾기</a>
+          </div>
+        </div>
+
+      </div>
+    `
+  },
+
+
+  /* ==========================================
    * SUPER AERO FESTA (WAWS 2 시리즈 할인)
    * 사용: <div id="promo-superaero"></div>
    * 기간: 2026-08-24 ~ 2026-10-31
@@ -107,7 +201,7 @@ const WIAWIS_PROMOS = {
             <ul class="wiawis-promo-list">
               
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
-              <li>타 프로모션과 중복 적용 불가</li>
+              <li>타 할인 프로모션과 중복 적용 불가 (커스텀 컬러 프로모션은 함께 적용)</li>
             </ul>
           </div>
 
@@ -135,7 +229,7 @@ const WIAWIS_PROMOS = {
             <ul class="wiawis-promo-list">
               
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
-              <li>타 프로모션과 중복 적용 불가</li>
+              <li>타 할인 프로모션과 중복 적용 불가 (커스텀 컬러 프로모션은 함께 적용)</li>
             </ul>
           </div>
 
@@ -163,7 +257,7 @@ const WIAWIS_PROMOS = {
             <ul class="wiawis-promo-list">
               
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
-              <li>타 프로모션과 중복 적용 불가</li>
+              <li>타 할인 프로모션과 중복 적용 불가 (커스텀 컬러 프로모션은 함께 적용)</li>
             </ul>
           </div>
 
@@ -203,7 +297,7 @@ const WIAWIS_PROMOS = {
             <ul class="wiawis-promo-list">
               
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
-              <li>타 프로모션과 중복 적용 불가</li>
+              <li>타 할인 프로모션과 중복 적용 불가 (커스텀 컬러 프로모션은 함께 적용)</li>
             </ul>
           </div>
 
@@ -234,7 +328,7 @@ const WIAWIS_PROMOS = {
             <ul class="wiawis-promo-list">
               
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
-              <li>타 프로모션과 중복 적용 불가</li>
+              <li>타 할인 프로모션과 중복 적용 불가 (커스텀 컬러 프로모션은 함께 적용)</li>
             </ul>
           </div>
 
@@ -317,7 +411,7 @@ const WIAWIS_PROMOS = {
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
               <li>핸들바 재고 소진 시 조기 종료될 수 있습니다</li>
-              <li>타 프로모션과 중복 적용 불가</li>
+              <li>타 할인 프로모션과 중복 적용 불가 (커스텀 컬러 프로모션은 함께 적용)</li>
               <li>사이즈 등 자세한 사항은 가까운 대리점에 문의 바랍니다</li>
             </ul>
           </div>
@@ -787,7 +881,7 @@ const WIAWIS_PROMOS = {
             <span class="wiawis-promo-notice-title">유의 사항</span>
             <ul class="wiawis-promo-list">
               <li>재고 소진 시 조기 종료될 수 있습니다</li>
-              <li>타 프로모션과 중복 적용 불가</li>
+              <li>타 할인 프로모션과 중복 적용 불가 (커스텀 컬러 프로모션은 함께 적용)</li>
             </ul>
           </div>
 
@@ -848,6 +942,13 @@ const WIAWIS_PROMOS = {
  * 카테고리 그룹 정의
  * ============================================ */
 const WIAWIS_CATEGORIES = {
+
+  /* ------ WIAWIS CUSTOM COLOR WEEKS (커스텀 컬러) ------ */
+  "custom": {
+    title: "WIAWIS CUSTOM COLOR WEEKS",
+    sub: "커스텀 컬러 최대 130만원 혜택",
+    promos: ["custom"]
+  },
 
   /* ------ SUPER AERO FESTA ------ */
   "superaero": {
@@ -1341,6 +1442,43 @@ const WIAWIS_PROMO_STYLES = `
 .wiawis-dealer-table td:last-child {
   width: 25%;
   color: #0a0a0a;
+}
+
+/* 혜택 표 (커스텀 컬러 등) */
+.wiawis-promo-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 4px 0 8px 0;
+  font-size: 14px;
+  table-layout: fixed;
+}
+.wiawis-promo-table th,
+.wiawis-promo-table td {
+  border: 1px solid #e5e5e5 !important;
+  padding: 10px 6px !important;
+  text-align: center !important;
+  color: #262626 !important;
+  background: #fff;
+  word-break: keep-all;
+}
+.wiawis-promo-table thead th {
+  background: #0a0a0a !important;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 13px;
+}
+.wiawis-promo-table tbody th {
+  background: #f5f5f5 !important;
+  font-weight: 700;
+}
+.wiawis-promo-table td.free {
+  color: #e53935 !important;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .wiawis-promo-table { font-size: 12px; }
+  .wiawis-promo-table th,
+  .wiawis-promo-table td { padding: 8px 3px !important; }
 }
 
 /* 반응형 */
